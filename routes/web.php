@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminhomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,10 +18,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login1', function () {
-    return view('login1');
+Route::get('/login', function () {
+    return view('login');
 });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/* 
+	Admin panel routes
+*/
+Route::get('/admin-login', function () {
+    return view('admin/admin-login');
+});
+
+Route::post("/admin-login", [UserController::class,'login']);
+Route::get('/admin-dashboard', function () {
+    return view('admin/admin-dashboard');
+});
+
+/*Route::get("/admin-dashboard", [AdmindashController::class,'index']);*/
+
