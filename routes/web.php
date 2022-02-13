@@ -29,11 +29,15 @@ Route::get('/login', function () {
 Route::get('/admin-login', function () {
     return view('admin/admin-login');
 });
-
 Route::post("/admin-login", [UserController::class,'login']);
+
 Route::get('/admin-dashboard', function () {
     return view('admin/admin-dashboard');
 });
 
+Route::get('/admin-students', function () {
+    return view('admin/admin-students');
+});
+Route::post("/admin-students", [UserController::class,'saveStudents']);
 /*Route::get("/admin-dashboard", [AdmindashController::class,'index']);*/
 

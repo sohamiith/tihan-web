@@ -18,6 +18,5 @@
 <body>
 	{{View::make('admin/admin-header')}}
 	@yield('admin-content')
-	
 </body>
 </html>
