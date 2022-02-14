@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminhomeController;
+use App\Http\Controllers\StudentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,9 +36,13 @@ Route::get('/admin-dashboard', function () {
     return view('admin/admin-dashboard');
 });
 
-Route::get('/admin-students', function () {
+/*Route::get('/admin-students', function () {
     return view('admin/admin-students');
-});
-Route::post("/admin-students", [UserController::class,'saveStudents']);
+});*/
+Route::get("/admin-students", [StudentController::class,'index']);
+Route::get("/admin-students/{seq_no}", [StudentController::class,'getStudent']);
+Route::post("/admin-students", [StudentController::class,'listStudents']);
+Route::post("/admin-students/add", [StudentController::class,'saveStudents']);
+Route::delete('admin-students/{seq_no}', [StudentController::class,'deleteStudent']);
 /*Route::get("/admin-dashboard", [AdmindashController::class,'index']);*/
 

@@ -150,7 +150,7 @@
 			        <input type="password" id="password" name="password" placeholder="Password">
 			        <input type="submit" value="Log In">
 			    </form>
-			    <p>{{!empty($message)?$message:''}}</p>
+			    <p style="color:red;">{{!empty($message)?$message:''}}</p>
 		    </div>
 		</div>
 	</section>	
