@@ -8,9 +8,24 @@ class StaffController extends Controller
 {
     public function index(Request $request)
 	{
+        $request['type'] = 1;
 		$staff = $this->listStaff($request);
 		return view('admin/admin-staff',['staffs'=>$staff]); 
 	}
+    
+    public function indexConsultant(Request $request)
+    {
+        $request['type'] = 2;
+        $staff = $this->listStaff($request);
+        return view('admin/admin-consultant',['staffs'=>$staff]); 
+    }
+
+    public function indexResearcher(Request $request)
+    {
+        $request['type'] = 3;
+        $staff = $this->listStaff($request);
+        return view('admin/admin-researcher',['staffs'=>$staff]); 
+    }
 
 	public function getStaff($seq_no)
 	{
@@ -31,6 +46,7 @@ class StaffController extends Controller
 	public function listStaff(Request $request)
     {
     	$query = Staffs::query();
+        $query->where('type', $request['type']);
     	if($active = $request->get('active'))
     	{
     		$query->where('active', $active);
@@ -67,7 +83,9 @@ class StaffController extends Controller
 
     function saveStaff(Request $request)
     {
-        $count = Staffs::where('emp_id',$request->get('emp_id'))->count();
+        $count = Staffs::where('emp_id',$request->get('emp_id'))
+                ->where('type',$request['type'])
+                ->count();
         if($count && empty($request->get('seq_no')))
         {
             return response()->json(['error' => 'Duplicate Emp ID']);
@@ -85,6 +103,7 @@ class StaffController extends Controller
         	"qualification" => $request->get('qualification'),
         	"tenure" => $request->get('tenure'),
         	"salary" => $request->get('salary'),
+            "type" => $request->get('type'),
             "updated_at" => date("Y-m-d h:i:s"),
             "created_at" => $request->get('created_at') ?? date("Y-m-d h:i:s"),
         ];
