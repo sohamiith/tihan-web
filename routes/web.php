@@ -6,11 +6,8 @@ use App\Http\Controllers\AdminhomeController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\InternController;
-<<<<<<< HEAD
-use App\Http\Controllers\ConsultantController;
-=======
 use App\Http\Controllers\PdfController;
->>>>>>> cd73a5c (pdfs)
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
