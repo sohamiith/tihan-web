@@ -42,4 +42,25 @@ active TINYINT default 1
 );
 alter table interns add column updated_at timestamp default null;
 alter table interns add column created_at timestamp default null;
+ALTER TABLE interns add column department varchar(63) default null after institute;
+ALTER TABLE interns add column qualification varchar(63) default null after department;
+
+
+create table staffs (
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+emp_id varchar(31) unique not null,
+full_name varchar(255) not null,
+designation varchar(255),
+email varchar(127),
+reporting varchar(255),
+phone varchar(15),
+date_of_joining date,
+date_of_exit date,
+qualification varchar(255),
+tenure DOUBLE(8,2),
+salary DOUBLE(8,2),
+active TINYINT default 1,
+updated_at timestamp,
+created_at timestamp
+);
 
