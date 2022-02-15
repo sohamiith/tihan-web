@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminhomeController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\InternController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,3 +61,9 @@ Route::post("/admin-staff", [StaffController::class,'listStaff']);
 Route::post("/admin-staff/add", [StaffController::class,'saveStaff']);
 Route::delete('admin-staff/{seq_no}', [StaffController::class,'deleteStaff']);
 
+Route::get("/admin-interns", [InternController::class,'index']);
+Route::get("/admin-interns/{seq_no}", [InternController::class,'getIntern']);
+Route::get("/admin-interns/active/{seq_no}", [InternController::class,'activeIntern']);
+Route::post("/admin-interns", [InternController::class,'listInterns']);
+Route::post("/admin-interns/add", [InternController::class,'saveInterns']);
+Route::delete('admin-interns/{seq_no}', [InternController::class,'deleteIntern']);
