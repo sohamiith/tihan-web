@@ -211,12 +211,16 @@
   // Open add intern popup
   $("#add_intern").on('click',function(){
     $("#form_intern").trigger('reset');
+    document.getElementById("seq_no").value = '';
+    document.getElementById("active").value = '';
     $("#modal_title").html('Add New Intern');
   });
 
   // Clear form data
   $("#clear_data").on('click',function(){
     $("#form_intern").trigger('reset');
+    document.getElementById("seq_no").value = '';
+    document.getElementById("active").value = '';
   });
 
   // Delete intern
@@ -236,7 +240,6 @@
 
   // Active/Inactive Intern
   $("body").on('click','#active_intern',function(){
-    var seq_no = $(this).data('id');
     var seq_no = $(this).data('id');
     $.ajax({
       type:'GET',

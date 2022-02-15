@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminhomeController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\InternController;
+use App\Http\Controllers\ConsultantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,3 +68,6 @@ Route::get("/admin-interns/active/{seq_no}", [InternController::class,'activeInt
 Route::post("/admin-interns", [InternController::class,'listInterns']);
 Route::post("/admin-interns/add", [InternController::class,'saveInterns']);
 Route::delete('admin-interns/{seq_no}', [InternController::class,'deleteIntern']);
+
+Route::get("/admin-consultant", [StaffController::class,'indexConsultant']);
+Route::get("/admin-researcher", [StaffController::class,'indexResearcher']);

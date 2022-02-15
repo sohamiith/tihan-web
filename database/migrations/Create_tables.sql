@@ -48,7 +48,7 @@ ALTER TABLE interns add column qualification varchar(63) default null after depa
 
 create table staffs (
 seq_no int PRIMARY KEY AUTO_INCREMENT,
-emp_id varchar(31) unique not null,
+emp_id varchar(31) not null,
 full_name varchar(255) not null,
 designation varchar(255),
 email varchar(127),
@@ -64,3 +64,4 @@ updated_at timestamp,
 created_at timestamp
 );
 
+alter table tihan.staffs add column type tinyint after active;

@@ -211,12 +211,16 @@
   // Open add students popup
   $("#add_student").on('click',function(){
     $("#form_student").trigger('reset');
+    document.getElementById("seq_no").value = '';
+    document.getElementById("active").value = '';
     $("#modal_title").html('Add New Student');
   });
 
   // Clear form data
   $("#clear_data").on('click',function(){
     $("#form_student").trigger('reset');
+    document.getElementById("seq_no").value = '';
+    document.getElementById("active").value = '';
   });
 
   // Delete Student
@@ -236,7 +240,6 @@
 
   // Active/Inactive Student
   $("body").on('click','#active_student',function(){
-    var seq_no = $(this).data('id');
     var seq_no = $(this).data('id');
     $.ajax({
       type:'GET',

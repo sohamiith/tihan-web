@@ -22,6 +22,7 @@ class Staffs extends Model
 		"tenure",
 		"salary",
 		"active",
+		"type",
 		"updated_at",
 		"created_at"
     ];

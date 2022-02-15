@@ -7,13 +7,13 @@
       <div class="page-header d-print-none">
         <div class="row align-items-center">
           <div class="col">
-            <br><h1 class="page-title">Tihan Staff Data</h1><br>
+            <br><h1 class="page-title">Tihan Consultant Data</h1><br>
           </div>
           <div class="col-auto ms-auto d-print-none btn-list">
             <div class="col-6 col-sm-4 col-md-2 col-xl mb-3">
               <a href="#div_staff" class="btn btn-info w-100" id="add_staff">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
-                Add New Staff
+                Add New Consultant
               </a>
             </div>
           </div>
@@ -90,7 +90,7 @@
     <form action="#" enctype="multipart/form-data" id="form_staff">
       <input type="hidden" class = "form-control" id="seq_no" name="seq_no">
       <input type="hidden" class = "form-control" id="active" name="active">
-      <input type="hidden" class = "form-control" id="type" name="type" value=1>
+      <input type="hidden" class = "form-control" id="type" name="type" value=2>
       <div class="row">
         <div class="col-md-3 col-xl-6">
           <label class="form-label required">Emp ID:</label>
@@ -189,8 +189,8 @@
   // Clear form data
   $("#clear_data").on('click',function(){
     $("#form_staff").trigger('reset');
-    $("#seq_no").trigger('reset');
-    $("#active").trigger('reset');
+    document.getElementById("seq_no").value = '';
+    document.getElementById("active").value = '';
   });
 
   // Delete Student
@@ -223,7 +223,7 @@
   $("body").on('click','#edit_staff',function(){
     var seq_no = $(this).data('id');
     $.get('admin-staff/'+seq_no,function(res){
-        $("#modal_title").html('Edit Staff Data');
+        $("#modal_title").html('Edit Consultant Data');
         $("#seq_no").val(res[0].seq_no);
         $("#emp_id").val(res[0].emp_id);
         $("#phone").val(res[0].phone);
