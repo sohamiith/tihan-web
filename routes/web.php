@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminhomeController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\InternController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,3 +53,9 @@ Route::post("/admin-students/add", [StudentController::class,'saveStudents']);
 Route::delete('admin-students/{seq_no}', [StudentController::class,'deleteStudent']);
 /*Route::get("/admin-dashboard", [AdmindashController::class,'index']);*/
 
+Route::get("/admin-interns", [InternController::class,'index']);
+Route::get("/admin-interns/{seq_no}", [InternController::class,'getIntern']);
+Route::get("/admin-interns/active/{seq_no}", [InternController::class,'activeIntern']);
+Route::post("/admin-interns", [InternController::class,'listInterns']);
+Route::post("/admin-interns/add", [InternController::class,'saveInterns']);
+Route::delete('admin-interns/{seq_no}', [InternController::class,'deleteIntern']);
