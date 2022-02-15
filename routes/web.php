@@ -6,7 +6,11 @@ use App\Http\Controllers\AdminhomeController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\InternController;
+<<<<<<< HEAD
 use App\Http\Controllers\ConsultantController;
+=======
+use App\Http\Controllers\PdfController;
+>>>>>>> cd73a5c (pdfs)
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,5 +73,14 @@ Route::post("/admin-interns", [InternController::class,'listInterns']);
 Route::post("/admin-interns/add", [InternController::class,'saveInterns']);
 Route::delete('admin-interns/{seq_no}', [InternController::class,'deleteIntern']);
 
+
 Route::get("/admin-consultant", [StaffController::class,'indexConsultant']);
 Route::get("/admin-researcher", [StaffController::class,'indexResearcher']);
+
+Route::get("/admin-pdfs", [PdfController::class,'index']);
+Route::get("/admin-pdfs/{seq_no}", [PdfController::class,'getPdf']);
+Route::get("/admin-pdfs/active/{seq_no}", [PdfController::class,'activePdf']);
+Route::post("/admin-pdfs", [PdfController::class,'listPdfs']);
+Route::post("/admin-pdfs/add", [PdfController::class,'savePdfs']);
+Route::delete('admin-pdfs/{seq_no}', [PdfController::class,'deletePdf']);
+

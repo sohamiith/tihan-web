@@ -45,7 +45,7 @@
                 <a class="dropdown-item" href="./admin-interns" >
                   Interns
                 </a>
-                <a class="dropdown-item" href="./admin-pdf" >
+                <a class="dropdown-item" href="./admin-pdfs" >
                   PDF
                 </a>
                 <a class="dropdown-item" href="./admin-researcher" >

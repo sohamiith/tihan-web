@@ -3,34 +3,34 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Intern;
-class InternController extends Controller
+use App\Models\Pdf;
+class PdfController extends Controller
 {
     public function index(Request $request)
 	{
-		$interns = $this->listInterns($request);
-		return view('admin/admin-interns',['interns'=>$interns]); 
+		$pdfs = $this->listPdfs($request);
+		return view('admin/admin-pdfs',['pdfs'=>$pdfs]); 
 	}
 
-	public function getIntern($seq_no)
+	public function getPdf($seq_no)
 	{
-		return Intern::where('seq_no',$seq_no)->get();
+		return Pdf::where('seq_no',$seq_no)->get();
 	}
 
-	public function activeIntern($seq_no)
+	public function activePdf($seq_no)
 	{
-		$intern = Intern::where('seq_no',$seq_no)->get();
+		$pdf = Pdf::where('seq_no',$seq_no)->get();
 		$update = ['active'=>0];
-		if($intern[0]->active == 0)
+		if($pdf[0]->active == 0)
 		{
 			$update = ['active'=>1];
 		}
-		return Intern::where('seq_no',$seq_no)->update($update);
+		return Pdf::where('seq_no',$seq_no)->update($update);
 	}
 
-	public function listInterns(Request $request)
+	public function listPdfs(Request $request)
     {
-    	$query = Intern::query();
+    	$query = Pdf::query();
     	if($active = $request->get('active'))
     	{
     		$query->where('active', $active);
@@ -54,18 +54,18 @@ class InternController extends Controller
     	$last_page = 1;
     	if($perPage = $request->get('perPage'))
     	{
-    		$interns = $query->offset(($page - 1) * $perPage)->limit($perPage)->get();
+    		$pdfs = $query->offset(($page - 1) * $perPage)->limit($perPage)->get();
     		$last_page = ceil($total / $perPage);
     	}
     	else
     	{
-    		$interns = $query->get();
+    		$pdfs = $query->get();
     	}
 
-        return $interns;
+        return $pdfs;
     }
 
-    function saveInterns(Request $request)
+    function savePdfs(Request $request)
     {
     	/*
 			Run following commands for storage link
@@ -74,10 +74,10 @@ class InternController extends Controller
     		sudo chmod -R 777 public/uploads
     		sudo chmod -R 777 storage
     	*/
-		$count = Intern::where('intern_no',$request->get('intern_no'))->count();
+		$count = Pdf::where('roll_no',$request->get('roll_no'))->count();
         if($count && empty($request->get('seq_no')))
         {
-            return response()->json(['error' => 'Duplicate Intern ID']);
+            return response()->json(['error' => 'Duplicate Roll No']);
         }
 
     	$request->validate([
@@ -94,31 +94,31 @@ class InternController extends Controller
         }
         
         $data = [
-        	"intern_no" => $request->get('intern_no'),
+        	"roll_no" => $request->get('roll_no'),
         	"full_name" => $request->get('full_name'),
         	"personal_email" => $request->get('email'),
         	"institute" => $request->get('institute'),
         	"phone" => $request->get('phone'),
         	"department" => $request->get('department'),
-        	// "program" => $request->get('program'),
-        	"guide" => $request->get('guide'),
-        	"qualification" => $request->get('qualification'),
+        	"program" => $request->get('program'),
+        	"first_guide" => $request->get('first_guide'),
+        	"second_guide" => $request->get('second_guide'),
         	"date_of_joining" => $request->get('date_of_joining'),
-        	"role" => $request->get('role'),
-        	"work_area" => $request->get('work_area'),
+        	"research_domain" => $request->get('research'),
+        	"project_title" => $request->get('project_title'),
         	"tenure" => $request->get('tenure'),
-        	"stipend" => $request->get('stipend'),
+        	"fellowship" => $request->get('fellowship'),
             "profile_url" => $request->get('profile_id'),
             "photo" => $path,
             "updated_at" => date("Y-m-d h:i:s"),
             "created_at" => $request->get('created_at') ?? date("Y-m-d h:i:s"),
         ];
 
-        $intern = new Intern($data);
+        $pdf = new Pdf($data);
 
         if($seq_no = $request->get('seq_no'))
     	{
-    		$old = Intern::where('seq_no',$seq_no)->get();
+    		$old = Pdf::where('seq_no',$seq_no)->get();
     		if(!empty($old[0]['photo']) && $old[0]['photo'] != $path)
     		{
     			if(file_exists(public_path($old[0]['photo'])))
@@ -126,20 +126,20 @@ class InternController extends Controller
 					unlink(public_path($old[0]['photo']));
 				}
     		}
-    		$intern->where('seq_no',$seq_no)->update($data);
+    		$pdf->where('seq_no',$seq_no)->update($data);
     		$data['seq_no'] = $seq_no;
     	}
     	else
     	{
-    		$intern->save();
-    		$data['seq_no'] = $intern->id;
+    		$pdf->save();
+    		$data['seq_no'] = $pdf->id;
     	}
         return response()->json($data);
     }
 
-    public function deleteIntern($seq_no)
+    public function deletePdf($seq_no)
     {
-        Intern::where('seq_no',$seq_no)->delete();
+        Pdf::where('seq_no',$seq_no)->delete();
         return response()->json('Deleted Successfully');
     }
 }
