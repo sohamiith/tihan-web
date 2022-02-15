@@ -74,6 +74,12 @@ class StudentController extends Controller
     		sudo chmod -R 777 public/uploads
     		sudo chmod -R 777 storage
     	*/
+        $count = Student::where('roll_no',$request->get('roll_no'))->count();
+        if($count && empty($request->get('seq_no')))
+        {
+            return response()->json(['error' => 'Duplicate Roll No']);
+        }
+
     	$request->validate([
           'file' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
