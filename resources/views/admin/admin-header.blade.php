@@ -42,20 +42,20 @@
                 <a class="dropdown-item" href="./admin-students" >
                   Students
                 </a>
-                <a class="dropdown-item" href="#" >
-                  PDF
-                </a>
-                <a class="dropdown-item" href="#" >
-                  Staff
-                </a>
-                <a class="dropdown-item" href="#" >
-                  Researcher
-                </a>
-                <a class="dropdown-item" href="#" >
-                  Faculties
-                </a>
                 <a class="dropdown-item" href="./admin-interns" >
                   Interns
+                </a>
+                <a class="dropdown-item" href="./admin-pdf" >
+                  PDF
+                </a>
+                <a class="dropdown-item" href="./admin-researcher" >
+                  Researcher
+                </a>
+                <a class="dropdown-item" href="./admin-consultant" >
+                  Consultant
+                </a>
+                <a class="dropdown-item" href="./admin-staff" >
+                  Staff
                 </a>
               </div>
             </div>

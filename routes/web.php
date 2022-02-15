@@ -52,3 +52,10 @@ Route::post("/admin-students/add", [StudentController::class,'saveStudents']);
 Route::delete('admin-students/{seq_no}', [StudentController::class,'deleteStudent']);
 /*Route::get("/admin-dashboard", [AdmindashController::class,'index']);*/
 
+Route::get("/admin-staff", [StudentController::class,'index']);
+Route::get("/admin-staff/{seq_no}", [StudentController::class,'getStaff']);
+Route::get("/admin-staff/active/{seq_no}", [StudentController::class,'activeStaff']);
+Route::post("/admin-staff", [StudentController::class,'listStaff']);
+Route::post("/admin-staff/add", [StudentController::class,'saveStaff']);
+Route::delete('admin-staff/{seq_no}', [StudentController::class,'deleteStaff']);
+

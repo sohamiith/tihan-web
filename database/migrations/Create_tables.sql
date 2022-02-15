@@ -42,4 +42,6 @@ active TINYINT default 1
 );
 alter table interns add column updated_at timestamp default null;
 alter table interns add column created_at timestamp default null;
+ALTER TABLE interns add column department varchar(63) default null after institute;
+ALTER TABLE interns add column qualification varchar(63) default null after department;
 
