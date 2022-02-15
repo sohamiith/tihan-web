@@ -46,6 +46,7 @@ ALTER TABLE interns add column department varchar(63) default null after institu
 ALTER TABLE interns add column qualification varchar(63) default null after department;
 
 
+
 create table staffs (
 seq_no int PRIMARY KEY AUTO_INCREMENT,
 emp_id varchar(31) not null,
@@ -65,3 +66,28 @@ created_at timestamp
 );
 
 alter table tihan.staffs add column type tinyint after active;
+
+create table pdf (
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+roll_no varchar(31) unique not null,
+full_name varchar(255) not null,
+department varchar(63),
+program varchar(31),
+first_guide varchar(255),
+second_guide varchar(255),
+research_domain varchar(255),
+project_title varchar(255),
+date_of_joining date,
+personal_email varchar(255),
+tenure DOUBLE(8,2),
+fellowship DOUBLE(8,2),
+profile_url varchar(255),
+photo varchar(255)
+);
+
+alter table pdf add column active TINYINT default 1;
+alter table pdf add column phone varchar(15) default null;
+alter table pdf add column institute varchar(255) default null;
+alter table pdf add column updated_at timestamp default null;
+alter table pdf add column created_at timestamp default null;
+
