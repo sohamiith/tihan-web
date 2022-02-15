@@ -30,6 +30,11 @@ Route::get('/login', function () {
 Route::get('/admin-login', function () {
     return view('admin/admin-login');
 });
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('/admin-login');
+});
+
 Route::post("/admin-login", [UserController::class,'login']);
 
 Route::get('/admin-dashboard', function () {
@@ -41,6 +46,7 @@ Route::get('/admin-dashboard', function () {
 });*/
 Route::get("/admin-students", [StudentController::class,'index']);
 Route::get("/admin-students/{seq_no}", [StudentController::class,'getStudent']);
+Route::get("/admin-students/active/{seq_no}", [StudentController::class,'activeStudent']);
 Route::post("/admin-students", [StudentController::class,'listStudents']);
 Route::post("/admin-students/add", [StudentController::class,'saveStudents']);
 Route::delete('admin-students/{seq_no}', [StudentController::class,'deleteStudent']);

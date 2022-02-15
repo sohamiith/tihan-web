@@ -58,7 +58,7 @@
                                   <div class="dropdown-menu dropdown-menu-end">
                                     <a class="dropdown-item" href="#div_student" id="edit_student" data-id="{{ $student->seq_no }}">View/Edit</a>
                                     <a class="dropdown-item" href="#" id="delete_student" data-id="{{ $student->seq_no }}">Delete</a>
-                                    <a class="dropdown-item" href="#">Inactive</a>
+                                    <a class="dropdown-item" id="active_student" data-id="{{ $student->seq_no }}">Inactive</a>
                                   </div>
                                 </span>
                               </td>
@@ -80,10 +80,14 @@
 
 <div id="div_student" class="overlay">
   <div class="popup">
-    <h2 id = "modal_title"></h2><br>
-    <a class="close" href="#">&times;</a>
+    <div class="modal-header">
+      <h2 id = "modal_title"></h2><br>
+      <a class="close" href="#">&times;</a>
+    </div>
+    <div class="modal-body">
     <form action="#" enctype="multipart/form-data" id="form_student">
       <input type="hidden" class = "form-control" id="seq_no" name="seq_no">
+      <input type="hidden" class = "form-control" id="active" name="active">
       <div class="row">
         <div class="col-md-3 col-xl-6">
           <label class="form-label required">Enrollment No:</label>
@@ -191,6 +195,7 @@
         </div>
       </div>
     </form>
+    </div>
   </div>
 </div>
 
@@ -212,20 +217,32 @@
   // Clear form data
   $("#clear_data").on('click',function(){
     $("#form_student").trigger('reset');
-    window.location.href = "#";
-
   });
 
   // Delete Student
   $("body").on('click','#delete_student',function(){
     var seq_no = $(this).data('id');
-    confirm('Are you sure to delete?');
+    if (confirm('Are you sure to delete?') == true)
+    {
+      $.ajax({
+        type:'DELETE',
+        url: "admin-students/" + seq_no
+      }).done(function(res){
+        $("#row_student_" + seq_no).remove();
+        alert(res)
+      });
+    }
+  });
+
+  // Active/Inactive Student
+  $("body").on('click','#active_student',function(){
+    var seq_no = $(this).data('id');
+    var seq_no = $(this).data('id');
     $.ajax({
-      type:'DELETE',
-      url: "admin-students/" + seq_no
+      type:'GET',
+      url: "admin-students/active/" + seq_no
     }).done(function(res){
       $("#row_student_" + seq_no).remove();
-      alert(res)
     });
   });
 
@@ -276,7 +293,8 @@
         row += '<td class="text-muted">' + res.tenure + '</td>';
         row += '<td class="text-muted">' + res.stipend + '</td>';
         row += '<td class="text-muted">' + res.project_title + '</td>';
-        row += '<td>' + '<span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">View/Edit</a> <a class="dropdown-item" href="#">Delete</a> <a class="dropdown-item" href="#">Inactive</a></div> </span>' + '</td>';
+        row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#div_student" id="edit_student" data-id="' + res.seq_no + '">View/Edit</a> <a class="dropdown-item" href="#" id="delete_student" data-id="' + res.seq_no +'">Delete</a> <a class="dropdown-item" id="active_student" data-id="'+res.seq_no +'">Inactive</a> </div></span> </td>';
+
         if($("#seq_no").val()){
             $("#row_student_" + res.seq_no).replaceWith(row);
         }else{

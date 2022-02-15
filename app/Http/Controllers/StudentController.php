@@ -17,6 +17,17 @@ class StudentController extends Controller
 		return Student::where('seq_no',$seq_no)->get();
 	}
 
+	public function activeStudent($seq_no)
+	{
+		$student = Student::where('seq_no',$seq_no)->get();
+		$update = ['active'=>0];
+		if($student[0]->active == 0)
+		{
+			$update = ['active'=>1];
+		}
+		return Student::where('seq_no',$seq_no)->update($update);
+	}
+
 	public function listStudents(Request $request)
     {
     	$query = Student::query();
@@ -76,8 +87,7 @@ class StudentController extends Controller
             $path = $request->file('photo')->storeAs('images', $imageName, 'public');
         }
         
-        // Store the record, using the new file hashname which will be it's new filename identity.
-        $student = new Student([
+        $data = [
         	"roll_no" => $request->get('roll_no'),
         	"full_name" => $request->get('full_name'),
         	"personal_email" => $request->get('email'),
@@ -96,7 +106,9 @@ class StudentController extends Controller
             "photo" => $path,
             "updated_at" => date("Y-m-d h:i:s"),
             "created_at" => $request->get('created_at') ?? date("Y-m-d h:i:s"),
-        ]);
+        ];
+
+        $student = new Student($data);
 
         if($seq_no = $request->get('seq_no'))
     	{
@@ -108,13 +120,15 @@ class StudentController extends Controller
 					unlink(public_path($old[0]['photo']));
 				}
     		}
-    		var_dump($student->update());exit();
+    		$student->where('seq_no',$seq_no)->update($data);
+    		$data['seq_no'] = $seq_no;
     	}
     	else
     	{
     		$student->save();
+    		$data['seq_no'] = $student->id;
     	}
-        return response()->json($student);
+        return response()->json($data);
     }
 
     public function deleteStudent($seq_no)

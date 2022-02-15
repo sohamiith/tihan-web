@@ -10,7 +10,7 @@
     </a>
   </h1>
   <div class="navbar-nav flex-row order-md-last">
-      <a href="#" class="nav-link d-flex lh-1 text-reset p-0">
+      <a href="/logout" class="nav-link d-flex lh-1 text-reset p-0">
         Logout
       </a>
   </div>
@@ -54,7 +54,7 @@
                 <a class="dropdown-item" href="#" >
                   Faculties
                 </a>
-                <a class="dropdown-item" href="#" >
+                <a class="dropdown-item" href="./admin-interns" >
                   Interns
                 </a>
               </div>
