@@ -282,6 +282,12 @@
         contentType: false,
         processData: false,
     }).done(function(res){
+      if('error' in res)
+      {
+        alert(res.error);
+      }
+      else
+      {
         var row = '<tr id="row_student_'+ res.seq_no + '">';
         row += '<td class="text-muted">' + res.roll_no + '</td>';
         row += '<td class="text-muted">' + res.full_name + '</td>';
@@ -300,8 +306,11 @@
         }else{
             $("#list_student").prepend(row);
         }
-        $("#form_student").trigger('reset');
-        window.location.href = "#";
+      }
+      document.getElementById("seq_no").value = '';
+      document.getElementById("active").value = '';
+      $("#form_student").trigger('reset');
+      window.location.href = "#";
     });
   });
 

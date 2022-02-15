@@ -74,6 +74,12 @@ class InternController extends Controller
     		sudo chmod -R 777 public/uploads
     		sudo chmod -R 777 storage
     	*/
+        $count = Intern::where('intern_no',$request->get('intern_no'))->count();
+        if($count && empty($request->get('seq_no')))
+        {
+            return response()->json(['error' => 'Duplicate Intern ID']);
+        }
+
     	$request->validate([
           'file' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
