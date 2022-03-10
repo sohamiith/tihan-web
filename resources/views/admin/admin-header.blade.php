@@ -1,3 +1,10 @@
+<?php 
+  if(!Session::has('user'))
+  {
+    return redirect('/admin-login');
+  }
+?>
+
 <div class="wrapper">
 <header class="navbar navbar-expand-md navbar-dark navbar-overlap d-print-none">
 <div class="container-xl">
@@ -71,32 +78,15 @@
             </span>
           </a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+        <li class="nav-item">
+          <a class="nav-link " href="./admin-assets">
             <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gps" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><path d="M12 17l-1 -4l-4 -1l9 -4z"></path></svg>
             </span>
             <span class="nav-link-title">
-              Site Data
+              Assets Managment
             </span>
           </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#" >
-              Page 1
-            </a>
-            <a class="dropdown-item" href="#" >
-              Page 2
-            </a>
-            <a class="dropdown-item" href="#" >
-              Page 3
-            </a>
-            <a class="dropdown-item" href="#" >
-              Page 4
-            </a>
-            <a class="dropdown-item" href="#" >
-              Page 5
-            </a>
-          </div>
         </li>
         <li class="nav-item active dropdown">
           <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >

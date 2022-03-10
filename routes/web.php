@@ -7,6 +7,7 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\InternController;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\AssetsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -80,4 +81,11 @@ Route::get("/admin-pdfs/active/{seq_no}", [PdfController::class,'activePdf']);
 Route::post("/admin-pdfs", [PdfController::class,'listPdfs']);
 Route::post("/admin-pdfs/add", [PdfController::class,'savePdfs']);
 Route::delete('admin-pdfs/{seq_no}', [PdfController::class,'deletePdf']);
+
+Route::get("/admin-assets", [AssetsController::class,'index']);
+Route::get("/admin-assets/{seq_no}", [AssetsController::class,'getAsset']);
+Route::get("/admin-assets/active/{seq_no}", [AssetsController::class,'activeAsset']);
+Route::post("/admin-assets", [AssetsController::class,'listAssets']);
+Route::post("/admin-assets/add", [AssetsController::class,'saveAssets']);
+Route::delete('admin-assets/{seq_no}', [AssetsController::class,'deleteAsset']);
 

@@ -91,3 +91,26 @@ alter table pdf add column institute varchar(255) default null;
 alter table pdf add column updated_at timestamp default null;
 alter table pdf add column created_at timestamp default null;
 
+
+create table assets (
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+asset_id varchar(31) not null,
+name varchar(255) not null,
+category_book varchar(255),
+category_fin varchar(255),
+identification varchar(255),
+life tinyint,
+user varchar(255),
+order_date date,
+supplier_name varchar(255),
+voucher DOUBLE(8,2),
+cost DOUBLE(8,2),
+discount DOUBLE(8,2),
+receive_date date,
+remaining DOUBLE(8,2),
+days DOUBLE(8,2),
+rate_as_par DOUBLE(8,2),
+updated_at timestamp,
+created_at timestamp
+);
+
