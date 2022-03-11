@@ -17,7 +17,7 @@
                                 <h1 data-animation="fadeInUp" data-delay=".5s">TiHAN</h1>
                                 <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
                                     <h2>IIT Hyderabad</h2>
-                                    <h2>IIT Hyderabad</h2>
+                                    <h2>IIT Hyderabad</h2>  
                                 </div>
                                 <!-- <div class="hero-text2 mt-110" data-animation="fadeInUp" data-delay=".9s">
                                    <span><a href="services.html">Our Services</a></span>
