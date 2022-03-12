@@ -65,8 +65,8 @@
                                         </li>
                                         <li><a href="services.html">Testbed</a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">About Testbed</a></li>
-                                                <li><a href="project_details.html">Foundation Stone Laying Ceremony</a></li>
+                                                <li><a href="/testbed">About Testbed</a></li>
+                                                <li><a href="/foundation_stone">Foundation Stone Laying Ceremony</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="blog.html">Tenders</a>
