@@ -22,10 +22,10 @@
                                 <div class="footer-tittle">
                                     <h4>Quick Links</h4>
                                     <ul>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="/Tihan-Foundation">About</a></li>
+                                        <li><a href="/industry">R & D</a></li>
+                                        <li><a href="/student-details">Team Details</a></li>
+                                        <li><a href="/donate">Donate</a></li>
                                         <li><a href="./office_forms">Office Forms</a></li>
                                     </ul>
                                 </div>
@@ -36,11 +36,13 @@
                                 <div class="footer-tittle">
                                     <h4>Contact</h4>
                                     <div class="footer-pera">
-                                        <p class="info1">198 West 21th Street, Suite 721 New York,NY 10010</p>
+                                        <p class="info1">NMICPS TiHAN Foundation,
+Indian Institute of Technology Hyderabad,
+Kandi, Sangareddy – 502284</p>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Phone: +95 (0) 123 456 789</a></li>
-                                        <li><a href="#">Cell: +95 (0) 123 456 789</a></li>
+                                        <li><a href="#">Phone: +91 402 301 6986</a></li>
+                                        <!-- <li><a href="#">Cell: +95 (0) 123 456 789</a></li> -->
                                     </ul>
                                 </div>
                             </div>
