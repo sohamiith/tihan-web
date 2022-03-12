@@ -26,6 +26,7 @@
                                         <li><a href="#">Services</a></li>
                                         <li><a href="#">Projects</a></li>
                                         <li><a href="#">Contact Us</a></li>
+                                        <li><a href="./office_forms">Office Forms</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -53,7 +54,7 @@
                                             <!-- <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Email Address '"> -->
                                             <div class="form-icon">
                                             <a href="admin-login"  id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
-                                                    SIGN IN
+                                                    Member login
                                         </a>
                                             </div>
                                             <div class="mt-10 info"></div>

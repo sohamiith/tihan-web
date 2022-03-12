@@ -13,6 +13,12 @@ class FormsController extends Controller
 		return view('admin/admin-forms',['forms'=>$forms]); 
 	}
 
+    public function indexForms(Request $request)
+    {
+        $forms = $this->listForms($request);
+        return view('office-forms',['forms'=>$forms]); 
+    }
+
 	public function downloadForm(Request $request, $file)
 	{
 		return response()->download(public_path('assets/'.$file));
