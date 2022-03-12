@@ -86,8 +86,22 @@
                             <img src="/img/service/servicess2.png" alt="">
                         </div>
                         <div class="service-cap">
-                            <h4><a href="https://tihan.iith.ac.in/2021/12/30/4160/">Call for TiHAN Skill Development proposals are open</a></h4>
+                            <h4><a href="https://tihan.iith.ac.in/2021/12/30/4160/">TiHAN Skill Development Call for Proposal</a></h4>
                             <a href="https://tihan.iith.ac.in/2021/12/30/4160/" class="more-btn">Read More <i class="ti-plus"></i></a>
+                        </div>
+                        <div class="service-icon">
+                            <img src="/img/icon/services_icon1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-service-cap mb-30">
+                        <div class="service-img">
+                            <img src="/img/service/servicess1.png" alt="">
+                        </div>
+                        <div class="service-cap">
+                            <h4><a href="https://itic.iith.ac.in/ottonomo22/">OTTONOMO’23 Grand Challenge </a></h4>
+                            <a href="https://itic.iith.ac.in/ottonomo22/" class="more-btn">Read More <i class="ti-plus"></i></a>
                         </div>
                         <div class="service-icon">
                             <img src="/img/icon/services_icon1.png" alt="">
@@ -886,7 +900,6 @@
 		<script src="./js/jquery.sticky.js"></script>
                
         <!-- counter , waypoint -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
         <script src="./js/jquery.counterup.min.js"></script>
 
         <!-- contact js -->
