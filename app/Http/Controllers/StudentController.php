@@ -12,6 +12,39 @@ class StudentController extends Controller
 		return view('admin/admin-students',['students'=>$students]); 
 	}
 
+    public function studentDetails(Request $request)
+    {
+        $program = $request->input('program');
+        $students = $this->listStudentsByGroup($program);
+        return view('team-students',['students'=>$students]); 
+    }
+
+    public function listStudentsByGroup($program)
+    {
+        $query = Student::query();
+        $query->select('roll_no','full_name','program','project_title','photo','profile_url');
+        $query->where('active', 1);
+        switch ($program)
+        {
+            case 'phd':
+                $query->where('program', 'phd');
+                break;
+            case 'pdf':
+                $query->where('program', 'pdf');
+                break;
+            default:
+                $query->where('program', 'mtech_TA')->orWhere('program', 'mtech_RA');
+                break;
+        }        
+
+        $query->orderBy('date_of_joining', 'DESC');
+        $students = $query->get();
+
+        //var_dump($students[0]['full_name']);exit();
+
+        return $students;
+    }
+
 	public function getStudent($seq_no)
 	{
 		return Student::where('seq_no',$seq_no)->get();

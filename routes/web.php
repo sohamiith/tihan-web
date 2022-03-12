@@ -38,9 +38,7 @@ Route::get('/academia', function () {
 Route::get('/members-of-the-hub-governing-board', function () {
     return view('team-hub');
 });
-Route::get('/student-details', function () {
-    return view('team-students');
-});
+Route::get('/student-details', [StudentController::class,'studentDetails']);
 
 Route::get("/office_forms", [FormsController::class,'indexForms']);
 Route::get('/testbed', function () {

@@ -20,12 +20,13 @@
         <link rel="stylesheet" href="/css/slick.css">
         <link rel="stylesheet" href="/css/nice-select.css">
         <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="stylesheet" href="assets/css/gijgo.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <link rel="stylesheet" href="/css/gijgo.css">
 </head>
 <body>
 	{{View::make('header')}}
 	@yield('content')
 	{{View::make('footer')}}
 </body>
+
 </html>

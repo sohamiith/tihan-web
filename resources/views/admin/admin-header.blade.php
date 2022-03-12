@@ -103,6 +103,15 @@
                 <a class="dropdown-item" href="./admin-forms" >
                   Forms
                 </a>
+                <a class="dropdown-item" href="./admin-forms" >
+                  Tenders
+                </a>
+                <a class="dropdown-item" href="./admin-forms" >
+                  press Release
+                </a>
+                <a class="dropdown-item" href="./admin-forms" >
+                  Events
+                </a>
               </div>
             </div>
           </div>
