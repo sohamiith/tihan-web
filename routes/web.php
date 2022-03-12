@@ -49,6 +49,10 @@ Route::get('/testbed', function () {
 Route::get('/foundation_stone', function () {
     return view('foundation_stone');
 });
+
+Route::get('/donate', function () {
+    return view('Donate');
+});
 Route::get('/login', function () {
     return view('login');
 });
