@@ -56,7 +56,7 @@
                                         </li>
                                         <li><a href="project.html">Team</a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">Hub Govering Body</a></li>
+                                                <li><a href="/members-of-the-hub-governing-board">Hub Govering Body</a></li>
                                                 <li><a href="project_details.html">Faculty of Hub/li>
                                                 <li><a href="services_details.html">Executive Team</a></li>
                                                 <li><a href="services_details.html">Student Details</a></li>
