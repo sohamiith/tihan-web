@@ -59,7 +59,7 @@
                                                 <li><a href="/members-of-the-hub-governing-board">Hub Govering Body</a></li>
                                                 <li><a href="project_details.html">Faculty of Hub/li>
                                                 <li><a href="services_details.html">Executive Team</a></li>
-                                                <li><a href="services_details.html">Student Details</a></li>
+                                                <li><a href="/student-details">Student Details</a></li>
                                                 <li><a href="services_details.html">Faculty Fellowship</a></li>
                                             </ul>
                                         </li>

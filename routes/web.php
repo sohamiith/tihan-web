@@ -38,6 +38,9 @@ Route::get('/academia', function () {
 Route::get('/members-of-the-hub-governing-board', function () {
     return view('team-hub');
 });
+Route::get('/student-details', function () {
+    return view('team-students');
+});
 
 Route::get('/login', function () {
     return view('login');
