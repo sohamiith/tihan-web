@@ -8,6 +8,7 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\InternController;
 use App\Http\Controllers\PdfController;
 use App\Http\Controllers\AssetsController;
+use App\Http\Controllers\FormsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,7 +72,6 @@ Route::post("/admin-interns", [InternController::class,'listInterns']);
 Route::post("/admin-interns/add", [InternController::class,'saveInterns']);
 Route::delete('admin-interns/{seq_no}', [InternController::class,'deleteIntern']);
 
-
 Route::get("/admin-consultant", [StaffController::class,'indexConsultant']);
 Route::get("/admin-researcher", [StaffController::class,'indexResearcher']);
 
@@ -88,4 +88,10 @@ Route::get("/admin-assets/active/{seq_no}", [AssetsController::class,'activeAsse
 Route::post("/admin-assets", [AssetsController::class,'listAssets']);
 Route::post("/admin-assets/add", [AssetsController::class,'saveAssets']);
 Route::delete('admin-assets/{seq_no}', [AssetsController::class,'deleteAsset']);
+
+Route::get("/admin-forms", [FormsController::class,'index']);
+Route::get("/form-download/{file}", [FormsController::class,'downloadForm']);
+Route::post("/admin-forms", [FormsController::class,'listForms']);
+Route::post("/admin-forms/add", [FormsController::class,'saveForms']);
+Route::delete('admin-forms/{seq_no}', [FormsController::class,'deleteform']);
 
