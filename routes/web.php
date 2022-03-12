@@ -24,6 +24,20 @@ use App\Http\Controllers\FormsController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/Tihan-Foundation', function () {
+    return view('About-us-Foundation');
+});
+Route::get('/industry', function () {
+    return view('R&D-Industry');
+});
+
+Route::get('/academia', function () {
+    return view('R&D-Acadamic');
+});
+
+Route::get('/members-of-the-hub-governing-board', function () {
+    return view('team-hub');
+});
 
 Route::get('/login', function () {
     return view('login');

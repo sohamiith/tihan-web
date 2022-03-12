@@ -32,7 +32,7 @@
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
                                 <!-- logo-1 -->
-                                <a href="index.html" class="big-logo"><img src="/img/logo/logo horizontal-07-02.png" width=100% height:=100% alt=""></a>
+                                <a href="/" class="big-logo"><img src="/img/logo/logo horizontal-07-02.png" width=100% height:=100% alt=""></a>
                                 <!-- logo-2 -->
                                 <!-- <a href="index.html" class="small-logo"><img src="assets/img/logo/logo horizontal-07-02.png" alt=""></a> -->
                             </div>
@@ -42,21 +42,21 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav> 
                                     <ul id="navigation">                              
-                                        <li><a href="index.html">About Us</a>
+                                        <li><a href="/Tihan-Foundation">About Us</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">TiHAN Foundation</a></li>
-                                                <li><a href="single-blog.html">TiHAN logo</a></li>
+                                                <li><a href="/Tihan-Foundation">TiHAN Foundation</a></li>
+                                                <li><a href="/img/logo.pdf">TiHAN logo</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="about.html">R & D</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Research Collabration</a></li>
-                                                <li><a href="single-blog.html">Academic Collabration</a></li>
+                                                <li><a href="/industry">Research Collabration</a></li>
+                                                <li><a href="/academia">Academic Collabration</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="project.html">Team</a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">Hub Govering Body</a></li>
+                                                <li><a href="/members-of-the-hub-governing-board">Hub Govering Body</a></li>
                                                 <li><a href="project_details.html">Faculty of Hub/li>
                                                 <li><a href="services_details.html">Executive Team</a></li>
                                                 <li><a href="services_details.html">Student Details</a></li>
