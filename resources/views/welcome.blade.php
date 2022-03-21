@@ -8,7 +8,7 @@
     <!-- slider Area Start-->
     <div class="slider-area ">
         <div class="slider-active">
-            <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="/img/hero/4.jpeg">
+            <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="/img/hero/4    .jpeg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-11">
@@ -16,7 +16,7 @@
                                 <div class="hero-text1">
                                    <a href="https://nmicps.gov.in/Home/TechnologyVertical/TechnologyVertical?HostInstitueid=NQ=="> <span data-animation="fadeInUp" data-delay=".3s" >DST NM-ICPS</span></a>
                                 </div>
-                                <h1 data-animation="fadeInUp" data-delay=".5s">TiHAN</h1>
+                                <h1 data-animation="fadeInUp" data-delay=".5s">T<span style="text-transform:lowercase">i</span>HAN</h1>
                                 <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
                                     <h2>IIT Hyderabad</h2>
                                     <h2>IIT Hyderabad</h2>  
@@ -266,7 +266,7 @@
                             <div class="front-text">
                                 <h2 class="">Our Projects</h2>
                             </div>
-                            <span class="back-text">Gellary</span>
+                            <span class="back-text">Gallary</span>
                         </div>
                     </div>
                     <div class="col-lg-6">

@@ -54,8 +54,24 @@ Route::get('/donate', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/faculty-hub', function () {
+    return view('team-faculty');
+});
+Route::get('/faculty-fellowship-program', function () {
+    return view('team-fellowship');
+});
 
+Route::get('/tender-invitations', function () {
+    return view('tender');
+});
 
+Route::get('/archives-tender', function () {
+    return view('tender-archives');
+});
+
+Route::get('/staff-details', function () {
+    return view('team-executive');
+});
 /* 
 	Admin panel routes
 */

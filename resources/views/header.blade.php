@@ -57,10 +57,10 @@
                                         <li><a href="project.html">Team</a>
                                             <ul class="submenu">
                                                 <li><a href="/members-of-the-hub-governing-board">Hub Govering Body</a></li>
-                                                <li><a href="project_details.html">Faculty of Hub/li>
-                                                <li><a href="services_details.html">Executive Team</a></li>
+                                                <li><a href="/faculty-hub">Faculty of Hub</a></li>
+                                                <li><a href="/staff-details">Executive Team</a></li>
                                                 <li><a href="/student-details?program=mtech">Student Details</a></li>
-                                                <li><a href="services_details.html">Faculty Fellowship</a></li>
+                                                <li><a href="/faculty-fellowship-program">Faculty Fellowship</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="services.html">Testbed</a>
@@ -69,7 +69,7 @@
                                                 <li><a href="/foundation_stone">Foundation Stone Laying Ceremony</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="blog.html">Tenders</a>
+                                        <li><a href="/tender-invitations">Tenders</a>
                                         </li>
                                         <li><a href="#">Activity</a>
                                             <ul class="submenu">
