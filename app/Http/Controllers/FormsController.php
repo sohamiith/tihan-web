@@ -62,12 +62,13 @@ class FormsController extends Controller
         {
             $imagePath = $request->file;
             $imageName = $imagePath->getClientOriginalName();
-            $path = $request->file->move('assets', $imageName);
+            $path = $request->file('file')->store('forms','s3');
+            //$path = $request->file->move('assets', $imageName);
         }
         
         $data = [
         	"title" => $request->get('title'),
-            "file" => $imageName,
+            "file" => Storage::disk('s3')->url($path),
             "updated_at" => date("Y-m-d h:i:s"),
             "created_at" => $request->get('created_at') ?? date("Y-m-d h:i:s"),
         ];

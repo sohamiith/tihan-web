@@ -114,3 +114,18 @@ updated_at timestamp,
 created_at timestamp
 );
 
+
+
+alter table tihan.users drop column full_name, drop column contact_no, drop column institute, drop column department, drop column first_manager, drop column second_manager, drop column admin_rights;
+alter table tihan.users add column user_type tinyint after password, 
+add column social_id varchar(255) after user_type,
+add column login_per tinyint default 0 after social_id,
+add column leave_apply tinyint default 0 after login_per,
+add column leave_managment tinyint default 0 after leave_apply,
+add column website_data tinyint default 0 after leave_managment,
+add column accounts tinyint default 0 after website_data,
+add column assets tinyint default 0 after accounts,
+add column attendance tinyint default 0 after assets;
+
+alter table tihan.users add column hr tinyint default 0 after assets;
+
