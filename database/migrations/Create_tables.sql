@@ -110,6 +110,20 @@ updated_at timestamp,
 created_at timestamp
 );
 
+
+create table skills(
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+title varchar(255),
+start_date date,
+end_date date,
+document varchar(255),
+reg_link varchar(255),
+participants varchar(255),
+updated_at timestamp,
+created_at timestamp
+);
+
+
 create table assets (
 seq_no int PRIMARY KEY AUTO_INCREMENT,
 asset_id varchar(31) not null,

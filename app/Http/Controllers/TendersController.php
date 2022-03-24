@@ -79,6 +79,7 @@ class TendersController extends Controller
     	else
     	{
     		$tender->save();
+            $data['seq_no'] = $tender->id;
     	}
 
         return response()->json($data);
@@ -86,7 +87,6 @@ class TendersController extends Controller
 
     public function deleteTender($seq_no)
     {
-        $tender = Tender::where('seq_no',$seq_no)->get();
         Tender::where('seq_no',$seq_no)->delete();
         return response()->json('Deleted Successfully');
     }

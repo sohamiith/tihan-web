@@ -10,6 +10,7 @@ use App\Http\Controllers\PdfController;
 use App\Http\Controllers\AssetsController;
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\TendersController;
+use App\Http\Controllers\SkillsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -125,4 +126,10 @@ Route::get("/admin-tender/{seq_no}", [TendersController::class,'getTender']);
 Route::post("/admin-tender", [TendersController::class,'listTender']);
 Route::post("/admin-tender/add", [TendersController::class,'saveTender']);
 Route::delete('admin-tender/{seq_no}', [TendersController::class,'deleteTender']);
+
+Route::get("/admin-skill", [SkillsController::class,'index']);
+Route::get("/admin-skill/{seq_no}", [SkillsController::class,'getSkill']);
+Route::post("/admin-skill", [SkillsController::class,'listSkill']);
+Route::post("/admin-skill/add", [SkillsController::class,'saveSkill']);
+Route::delete('admin-skill/{seq_no}', [SkillsController::class,'deleteSkill']);
 

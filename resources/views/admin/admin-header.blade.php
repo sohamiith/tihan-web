@@ -106,8 +106,8 @@
                 <a class="dropdown-item" href="./admin-tender" >
                   Tenders
                 </a>
-                <a class="dropdown-item" href="./admin-forms" >
-                  press Release
+                <a class="dropdown-item" href="./admin-skill" >
+                  Skill Development
                 </a>
                 <a class="dropdown-item" href="./admin-forms" >
                   Events

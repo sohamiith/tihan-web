@@ -7,13 +7,13 @@
       <div class="page-header d-print-none">
         <div class="row align-items-center">
           <div class="col">
-            <br><h1 class="page-title">Tihan Tenders</h1><br>
+            <br><h1 class="page-title">Tihan Skill Development</h1><br>
           </div>
           <div class="col-auto ms-auto d-print-none btn-list">
             <div class="col-6 col-sm-4 col-md-2 col-xl mb-3">
-              <a href="#div_tender" class="btn btn-info w-100" id="add_tender">
+              <a href="#div_skill" class="btn btn-info w-100" id="add_skill">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
-                Add New Tender
+                Add New Program
               </a>
             </div>
           </div>
@@ -26,26 +26,30 @@
                       <table class="table table-vcenter card-table">
                         <thead>
                           <tr>
-                            <th>Description</th>
+                            <th>Title</th>
                             <th>Start Date</th>
                             <th>End Date</th>
-                            <th>Document</th>
+                            <th>No. of Participants</th>
+                            <th>Poster</th>
+                            <th>Reg. Link</th>
                             <th class="w-1"></th>
                           </tr>
                         </thead>
-                        <tbody id="list_tender">
-                          @foreach($tenders as $tender)
-                            <tr id="row_tender_{{ $tender->seq_no}}">
-                              <td class="text-muted">{{$tender->description}}</td>
-                              <td class="text-muted">{{$tender->start_date}}</td>
-                              <td class="text-muted">{{$tender->end_date}}</td>
-                              <td class="text-muted"><a target="_blank" href="{{$tender->document}}">view</a></td>
+                        <tbody id="list_skill">
+                          @foreach($skills as $skill)
+                            <tr id="row_skill_{{ $skill->seq_no}}">
+                              <td class="text-muted">{{$skill->title}}</td>
+                              <td class="text-muted">{{$skill->start_date}}</td>
+                              <td class="text-muted">{{$skill->end_date}}</td>
+                              <td class="text-muted">{{$skill->participants}}</td>
+                              <td class="text-muted"><a target="_blank" href="{{$skill->document}}">view</a></td>
+                              <td class="text-muted"><a target="_blank" href="{{$skill->reg_link}}">link</a></td>
                               <td class="text-end">
                                 <span class="dropdown">
                                   <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
                                   <div class="dropdown-menu dropdown-menu-end">
-                                    <a class="dropdown-item" href="#div_tender" id="edit_tender" data-id="{{ $tender->seq_no }}">View/Edit</a>
-                                    <a class="dropdown-item" href="#" id="delete_tender" data-id="{{ $tender->seq_no }}">Delete</a>
+                                    <a class="dropdown-item" href="#div_skill" id="edit_skill" data-id="{{ $skill->seq_no }}">View/Edit</a>
+                                    <a class="dropdown-item" href="#" id="delete_skill" data-id="{{ $skill->seq_no }}">Delete</a>
                                   </div>
                                 </span>
                               </td>
@@ -65,19 +69,19 @@
   </div>
 </div>
 
-<div id="div_tender" class="overlay">
+<div id="div_skill" class="overlay">
   <div class="popup">
     <div class="modal-header">
       <h2>Add Tenders</h2><br>
       <a class="close" href="#">&times;</a>
     </div>
     <div class="modal-body">
-    <form action="#" enctype="multipart/form-data" id="form_tender">
+    <form action="#" enctype="multipart/form-data" id="form_skill">
       <input type="hidden" class = "form-control" id="seq_no" name="seq_no">
       <div class="row">
         <div class="col-md-6 col-xl-12">
-          <label class="form-label required">Description:</label>
-          <input type="text" class = "form-control" id="description" name="description" placeholder="Description" required><br>
+          <label class="form-label required">Name Of Seminar:</label>
+          <input type="text" class = "form-control" id="title" name="title" placeholder="Name Of Seminar" required><br>
         </div>
       </div>
       <div class="row">
@@ -91,9 +95,19 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-xl-12">
+        <div class="col-md-3 col-xl-6">
           <label class="form-label required">Document Link:</label>
           <input type="text" class = "form-control" id="document" name="document" placeholder="Document Line" required><br>
+        </div>
+        <div class="col-md-3 col-xl-6">
+          <label class="form-label required">Registration Link:</label>
+          <input type="text" class = "form-control" id="reg_link" name="reg_link" placeholder="Registration Link" required><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xl-6">
+          <label class="form-label">Name Of Participants:</label>
+          <input type="text" class = "form-control" id="participants" name="participants" placeholder="Name Of Participants"><br>
         </div>
       </div>
       <br><br>
@@ -120,43 +134,45 @@
   });
 
   // Open add form popup
-  $("#add_tender").on('click',function(){
+  $("#add_skill").on('click',function(){
     document.getElementById("seq_no").value = '';
-    $("#form_tender").trigger('reset');
+    $("#form_skill").trigger('reset');
     $("#seq_no").trigger('reset');
   });
 
   // Clear form data
   $("#clear_data").on('click',function(){
     document.getElementById("seq_no").value = '';
-    $("#form_tender").trigger('reset');
+    $("#form_skill").trigger('reset');
     document.getElementById("seq_no").value = '';
   });
 
   // Delete Student
-  $("body").on('click','#delete_tender',function(){
+  $("body").on('click','#delete_skill',function(){
     var seq_no = $(this).data('id');
     if (confirm('Are you sure to delete?') == true)
     {
       $.ajax({
         type:'DELETE',
-        url: "admin-tender/" + seq_no
+        url: "admin-skill/" + seq_no
       }).done(function(res){
-        $("#row_tender_" + seq_no).remove();
+        $("#row_skill_" + seq_no).remove();
         alert(res)
       });
     }
   });
 
   // Update Students
-  $("body").on('click','#edit_tender',function(){
+  $("body").on('click','#edit_skill',function(){
     var seq_no = $(this).data('id');
-    $.get('admin-tender/'+seq_no,function(res){
+    $.get('admin-skill/'+seq_no,function(res){
         $("#seq_no").val(res[0].seq_no);
-        $("#description").val(res[0].description);
+        $("#title").val(res[0].title);
         $("#start_date").val(res[0].start_date);
         $("#end_date").val(res[0].end_date);
         $("#document").val(res[0].document);
+        $("#reg_link").val(res[0].reg_link);
+        $("#participants").val(res[0].participants);
     });
   });
 
@@ -165,7 +181,7 @@
     e.preventDefault();
     let formData = new FormData(this);
     $.ajax({
-        url:"admin-tender/add",
+        url:"admin-skill/add",
         data: formData,
         type:'POST',
         contentType: false,
@@ -177,22 +193,24 @@
         }
         else
         {
-          var row = '<tr id="row_tender_'+ res.seq_no + '">';
-          row += '<td class="text-muted">' + res.description + '</td>';
+          var row = '<tr id="row_skill_'+ res.seq_no + '">';
+          row += '<td class="text-muted">' + res.title + '</td>';
           row += '<td class="text-muted">' + res.start_date + '</td>';
           row += '<td class="text-muted">' + res.end_date + '</td>';
+          row += '<td class="text-muted">' + res.participants + '</td>';
           row += '<td class="text-muted"><a target="_blank" href=' + res.document + '>view</a></td>';
-          row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#div_tender" id="edit_tender" data-id="' + res.seq_no + '">View/Edit</a> <a class="dropdown-item" href="#" id="delete_tender" data-id="' + res.seq_no +'">Delete</a></div></span> </td>';
+          row += '<td class="text-muted"><a target="_blank" href=' + res.reg_link + '>link</a></td>';
+          row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#div_skill" id="edit_skill" data-id="' + res.seq_no + '">View/Edit</a> <a class="dropdown-item" href="#" id="delete_skill" data-id="' + res.seq_no +'">Delete</a></div></span> </td>';
 
           if($("#seq_no").val()){
-              $("#row_tender_" + res.seq_no).replaceWith(row);
+              $("#row_skill_" + res.seq_no).replaceWith(row);
           }else{
-              $("#list_tender").prepend(row);
+              $("#list_skill").prepend(row);
           }
         }
 
         document.getElementById("seq_no").value = '';
-        $("#form_tender").trigger('reset');
+        $("#form_skill").trigger('reset');
         window.location.href = "#";
     });
   });
