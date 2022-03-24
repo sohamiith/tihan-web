@@ -115,6 +115,9 @@
                 <a class="dropdown-item" href="./admin-internship" >
                   Internship
                 </a>
+                <a class="dropdown-item" href="./admin-job" >
+                  Job
+                </a>
               </div>
             </div>
           </div>
