@@ -9,7 +9,7 @@ use App\Http\Controllers\InternController;
 use App\Http\Controllers\PdfController;
 use App\Http\Controllers\AssetsController;
 use App\Http\Controllers\FormsController;
-
+use App\Http\Controllers\TendersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -116,8 +116,13 @@ Route::post("/admin-assets/add", [AssetsController::class,'saveAssets']);
 Route::delete('admin-assets/{seq_no}', [AssetsController::class,'deleteAsset']);
 
 Route::get("/admin-forms", [FormsController::class,'index']);
-Route::get("/form-download/{file}", [FormsController::class,'downloadForm']);
 Route::post("/admin-forms", [FormsController::class,'listForms']);
 Route::post("/admin-forms/add", [FormsController::class,'saveForms']);
 Route::delete('admin-forms/{seq_no}', [FormsController::class,'deleteform']);
+
+Route::get("/admin-tender", [TendersController::class,'index']);
+Route::get("/admin-tender/{seq_no}", [TendersController::class,'getTender']);
+Route::post("/admin-tender", [TendersController::class,'listTender']);
+Route::post("/admin-tender/add", [TendersController::class,'saveTender']);
+Route::delete('admin-tender/{seq_no}', [TendersController::class,'deleteTender']);
 

@@ -100,6 +100,16 @@ updated_at timestamp,
 created_at timestamp
 );
 
+create table tenders(
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+description varchar(255),
+start_date date,
+end_date date,
+document varchar(255),
+updated_at timestamp,
+created_at timestamp
+);
+
 create table assets (
 seq_no int PRIMARY KEY AUTO_INCREMENT,
 asset_id varchar(31) not null,
