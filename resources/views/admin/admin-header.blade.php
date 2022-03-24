@@ -112,6 +112,9 @@
                 <a class="dropdown-item" href="./admin-lecture" >
                   Industry Lecture
                 </a>
+                <a class="dropdown-item" href="./admin-internship" >
+                  Internship
+                </a>
               </div>
             </div>
           </div>

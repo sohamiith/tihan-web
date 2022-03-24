@@ -12,6 +12,8 @@ use App\Http\Controllers\FormsController;
 use App\Http\Controllers\TendersController;
 use App\Http\Controllers\SkillsController;
 use App\Http\Controllers\LecturesController;
+use App\Http\Controllers\InternshipsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -134,10 +136,15 @@ Route::post("/admin-skill", [SkillsController::class,'listSkill']);
 Route::post("/admin-skill/add", [SkillsController::class,'saveSkill']);
 Route::delete('admin-skill/{seq_no}', [SkillsController::class,'deleteSkill']);
 
-
 Route::get("/admin-lecture", [LecturesController::class,'index']);
 Route::get("/admin-lecture/{seq_no}", [LecturesController::class,'getLecture']);
 Route::post("/admin-lecture", [LecturesController::class,'listLecture']);
 Route::post("/admin-lecture/add", [LecturesController::class,'saveLecture']);
 Route::delete('admin-lecture/{seq_no}', [LecturesController::class,'deleteLecture']);
+
+Route::get("/admin-internship", [InternshipsController::class,'index']);
+Route::get("/admin-internship/{seq_no}", [InternshipsController::class,'getInternship']);
+Route::post("/admin-internship", [InternshipsController::class,'listInternship']);
+Route::post("/admin-internship/add", [InternshipsController::class,'saveInternship']);
+Route::delete('admin-internship/{seq_no}', [InternshipsController::class,'deleteInternship']);
 
