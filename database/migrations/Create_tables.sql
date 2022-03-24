@@ -110,6 +110,16 @@ updated_at timestamp,
 created_at timestamp
 );
 
+create table lectures(
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+title varchar(255),
+lecture_date date,
+speaker varchar(255),
+designation varchar(255),
+org varchar(255),
+updated_at timestamp,
+created_at timestamp
+);
 
 create table skills(
 seq_no int PRIMARY KEY AUTO_INCREMENT,

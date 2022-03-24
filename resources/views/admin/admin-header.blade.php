@@ -109,8 +109,8 @@
                 <a class="dropdown-item" href="./admin-skill" >
                   Skill Development
                 </a>
-                <a class="dropdown-item" href="./admin-forms" >
-                  Events
+                <a class="dropdown-item" href="./admin-lecture" >
+                  Industry Lecture
                 </a>
               </div>
             </div>
