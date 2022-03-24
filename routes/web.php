@@ -11,6 +11,7 @@ use App\Http\Controllers\AssetsController;
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\TendersController;
 use App\Http\Controllers\SkillsController;
+use App\Http\Controllers\LecturesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -132,4 +133,11 @@ Route::get("/admin-skill/{seq_no}", [SkillsController::class,'getSkill']);
 Route::post("/admin-skill", [SkillsController::class,'listSkill']);
 Route::post("/admin-skill/add", [SkillsController::class,'saveSkill']);
 Route::delete('admin-skill/{seq_no}', [SkillsController::class,'deleteSkill']);
+
+
+Route::get("/admin-lecture", [LecturesController::class,'index']);
+Route::get("/admin-lecture/{seq_no}", [LecturesController::class,'getLecture']);
+Route::post("/admin-lecture", [LecturesController::class,'listLecture']);
+Route::post("/admin-lecture/add", [LecturesController::class,'saveLecture']);
+Route::delete('admin-lecture/{seq_no}', [LecturesController::class,'deleteLecture']);
 
