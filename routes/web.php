@@ -13,6 +13,7 @@ use App\Http\Controllers\TendersController;
 use App\Http\Controllers\SkillsController;
 use App\Http\Controllers\LecturesController;
 use App\Http\Controllers\InternshipsController;
+use App\Http\Controllers\JobsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -147,4 +148,10 @@ Route::get("/admin-internship/{seq_no}", [InternshipsController::class,'getInter
 Route::post("/admin-internship", [InternshipsController::class,'listInternship']);
 Route::post("/admin-internship/add", [InternshipsController::class,'saveInternship']);
 Route::delete('admin-internship/{seq_no}', [InternshipsController::class,'deleteInternship']);
+
+Route::get("/admin-job", [JobsController::class,'index']);
+Route::get("/admin-job/{seq_no}", [JobsController::class,'getJob']);
+Route::post("/admin-job", [JobsController::class,'listJob']);
+Route::post("/admin-job/add", [JobsController::class,'saveJob']);
+Route::delete('admin-job/{seq_no}', [JobsController::class,'deleteJob']);
 
