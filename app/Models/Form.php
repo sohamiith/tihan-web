@@ -12,6 +12,7 @@ class Form extends Model
     	"seq_no",
 		"title",
 		"file",
+		"url",
 		"updated_at",
 		"created_at"
     ];

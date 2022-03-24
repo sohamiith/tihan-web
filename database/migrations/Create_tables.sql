@@ -91,6 +91,14 @@ alter table pdf add column institute varchar(255) default null;
 alter table pdf add column updated_at timestamp default null;
 alter table pdf add column created_at timestamp default null;
 
+create table forms (
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+title varchar(255),
+file varchar(255),
+url varchar(255),
+updated_at timestamp,
+created_at timestamp
+);
 
 create table assets (
 seq_no int PRIMARY KEY AUTO_INCREMENT,

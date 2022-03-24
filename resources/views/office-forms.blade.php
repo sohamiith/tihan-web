@@ -34,7 +34,7 @@
                             <div class="details-caption">
                                 @foreach($forms as $form)
                                     <tr id="row_form_{{ $form->seq_no}}">
-                                      <td class="text-muted"><a href="{{url('./assets',$form->file)}}" id="view" data-id="{{ $form->seq_no }}" target="_blank">{{$form->title}}</a></td> <br>
+                                      <td class="text-muted"><a href="{{$form->url}}" id="view" data-id="{{ $form->seq_no }}" target="_blank">{{$form->title}}</a></td> <br>
                                     </tr>
                                 @endforeach
 

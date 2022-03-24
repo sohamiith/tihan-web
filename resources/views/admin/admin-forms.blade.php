@@ -41,8 +41,8 @@
                                   <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
                                   <div class="dropdown-menu dropdown-menu-end">
                                     <a class="dropdown-item" href="#" id="delete_form" data-id="{{ $form->seq_no }}">Delete</a>
-                                    <a class="dropdown-item" href="{{url('./assets',$form->file)}}" id="view" data-id="{{ $form->seq_no }}" target="_blank">View</a>
-                                    <a class="dropdown-item" href="{{url('/form-download',$form->file)}}" id="download" data-id="{{ $form->seq_no }}">Download</a>
+                                    <a class="dropdown-item" href="{{$form->url}}" id="view" data-id="{{ $form->seq_no }}" target="_blank">View</a>
+                                    </a>
                                   </div>
                                 </span>
                               </td>
@@ -171,7 +171,7 @@
           var row = '<tr id="row_form_'+ res.seq_no + '">';
           row += '<td class="text-muted">' + res.title + '</td>';
           row += '<td class="text-muted">' + res.updated_at + '</td>';
-          row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#" id="delete_form" data-id="' + res.seq_no + '">Delete</a> <a class="dropdown-item" href="{{url("./assets",$form->file)}}" data-id="' + res.seq_no +'" target="_blank">view</a> <a class="dropdown-item"  href={{url("./form-download",$form->file)}} data-id="'+res.seq_no +'">Download</a> </div></span> </td>';
+          row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#" id="delete_form" data-id="' + res.seq_no + '">Delete</a> <a class="dropdown-item" id="view" href="'+res.url+'" data-id="' + res.seq_no +'" target="_blank">view</a> </div></span> </td>';
 
           if($("#seq_no").val()){
               $("#row_form_" + res.seq_no).replaceWith(row);

@@ -12,15 +12,11 @@ class UserController extends Controller
     {
     	$message = '';
     	$user= User::where(['email'=>$req->username])->first();
-        if(!$user || !Hash::check($req->password,$user->password) || !$user->admin_rights)
+        //var_dump($user);exit();
+        if(!$user || !Hash::check($req->password,$user->password))
         {
         	$message = 'Incorrect Username or password';
         	return view('admin/admin-login', ['message' => $message]);
-        }
-        elseif (!$user->admin_rights) 
-        {
-            $message = 'Unauthorized access';
-            return view('admin/admin-login', ['message' => $message]);
         }
         else
         {
