@@ -19,11 +19,6 @@ class FormsController extends Controller
         return view('office-forms',['forms'=>$forms]); 
     }
 
-	public function downloadForm(Request $request, $file)
-	{
-		return response()->download(public_path('assets/'.$file));
-	}
-
 	public function listForms(Request $request)
     {
     	$query = Form::query();

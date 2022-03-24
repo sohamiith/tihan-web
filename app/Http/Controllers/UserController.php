@@ -12,7 +12,6 @@ class UserController extends Controller
     {
     	$message = '';
     	$user= User::where(['email'=>$req->username])->first();
-        //var_dump($user);exit();
         if(!$user || !Hash::check($req->password,$user->password))
         {
         	$message = 'Incorrect Username or password';

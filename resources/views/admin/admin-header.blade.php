@@ -103,7 +103,7 @@
                 <a class="dropdown-item" href="./admin-forms" >
                   Forms
                 </a>
-                <a class="dropdown-item" href="./admin-forms" >
+                <a class="dropdown-item" href="./admin-tender" >
                   Tenders
                 </a>
                 <a class="dropdown-item" href="./admin-forms" >
