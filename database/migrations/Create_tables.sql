@@ -154,6 +154,17 @@ updated_at timestamp,
 created_at timestamp
 );
 
+create table presses(
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+title varchar(255),
+description text,
+release_date date,
+document varchar(255),
+file_name varchar(255),
+link varchar(255),
+updated_at timestamp,
+created_at timestamp
+);
 
 create table assets (
 seq_no int PRIMARY KEY AUTO_INCREMENT,

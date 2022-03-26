@@ -14,6 +14,7 @@ use App\Http\Controllers\SkillsController;
 use App\Http\Controllers\LecturesController;
 use App\Http\Controllers\InternshipsController;
 use App\Http\Controllers\JobsController;
+use App\Http\Controllers\PresssController;
 
 /*
 |--------------------------------------------------------------------------
@@ -154,4 +155,10 @@ Route::get("/admin-job/{seq_no}", [JobsController::class,'getJob']);
 Route::post("/admin-job", [JobsController::class,'listJob']);
 Route::post("/admin-job/add", [JobsController::class,'saveJob']);
 Route::delete('admin-job/{seq_no}', [JobsController::class,'deleteJob']);
+
+Route::get("/admin-press", [PresssController::class,'index']);
+Route::get("/admin-press/{seq_no}", [PresssController::class,'getPress']);
+Route::post("/admin-press", [PresssController::class,'listPress']);
+Route::post("/admin-press/add", [PresssController::class,'savePress']);
+Route::delete('admin-press/{seq_no}', [PresssController::class,'deletePress']);
 
