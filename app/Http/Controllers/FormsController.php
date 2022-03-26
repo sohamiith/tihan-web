@@ -76,6 +76,7 @@ class FormsController extends Controller
     	else
     	{
     		$form->save();
+            $data['seq_no'] = $form->id;
     	}
         return response()->json($data);
     }

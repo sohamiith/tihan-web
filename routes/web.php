@@ -15,6 +15,7 @@ use App\Http\Controllers\LecturesController;
 use App\Http\Controllers\InternshipsController;
 use App\Http\Controllers\JobsController;
 use App\Http\Controllers\PresssController;
+use App\Http\Controllers\EventsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -162,3 +163,7 @@ Route::post("/admin-press", [PresssController::class,'listPress']);
 Route::post("/admin-press/add", [PresssController::class,'savePress']);
 Route::delete('admin-press/{seq_no}', [PresssController::class,'deletePress']);
 
+Route::get("/admin-events", [EventsController::class,'index']);
+Route::post("/admin-events", [EventsController::class,'listEvents']);
+Route::post("/admin-events/add", [EventsController::class,'saveEvents']);
+Route::delete('admin-events/{seq_no}', [EventsController::class,'deleteEvent']);

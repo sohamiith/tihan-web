@@ -166,6 +166,22 @@ updated_at timestamp,
 created_at timestamp
 );
 
+create table events(
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+title varchar(255),
+event_date date,
+file1 varchar(255),
+url1 varchar(255),
+file2 varchar(255),
+url2 varchar(255),
+file3 varchar(255),
+url3 varchar(255),
+file4 varchar(255),
+url4 varchar(255),
+updated_at timestamp,
+created_at timestamp
+);
+
 create table assets (
 seq_no int PRIMARY KEY AUTO_INCREMENT,
 asset_id varchar(31) not null,
