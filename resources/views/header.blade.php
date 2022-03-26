@@ -57,10 +57,10 @@
                                         <li><a href="project.html">Team</a>
                                             <ul class="submenu">
                                                 <li><a href="/members-of-the-hub-governing-board">Hub Govering Body</a></li>
-                                                <li><a href="project_details.html">Faculty of Hub/li>
-                                                <li><a href="services_details.html">Executive Team</a></li>
+                                                <li><a href="/faculty-hub">Faculty of Hub</a></li>
+                                                <li><a href="/staff-details">Executive Team</a></li>
                                                 <li><a href="/student-details?program=mtech">Student Details</a></li>
-                                                <li><a href="services_details.html">Faculty Fellowship</a></li>
+                                                <li><a href="/faculty-fellowship-program">Faculty Fellowship</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="services.html">Testbed</a>
@@ -69,28 +69,28 @@
                                                 <li><a href="/foundation_stone">Foundation Stone Laying Ceremony</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="blog.html">Tenders</a>
+                                        <li><a href="/tender-invitations">Tenders</a>
                                         </li>
                                         <li><a href="#">Activity</a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">Skill Development</a></li>
-                                                <li><a href="project_details.html">Lecture Series</a></li>
-                                                <li><a href="services_details.html">Entrepreneurship</a></li>
-                                                <li><a href="services_details.html">Call for proposal</a></li>
-                                                <li><a href="services_details.html">Skill Development</a></li>
+                                                <li><a href="/skill-development-programs-workshops">Skill Development</a></li>
+                                                <li><a href="/industry-lecture-series">Lecture Series</a></li>
+                                                <li><a href="/entrepreneurship-2">Entrepreneurship</a></li>
+                                                <li><a href="/call-for-expression-of-interest">Call for proposal</a></li>
+                                                <li><a href="/skill-development-proposal">Skill Development Call for Proposal</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">News</a>
                                             <ul class="submenu">
-                                            <li><a href="elements.html">Press Releases</a></li>
-                                            <li><a href="project_details.html">Event</a></li>
+                                            <li><a href="/press-releases">Press Releases</a></li>
+                                            <li><a href="/events">Event</a></li>
                                             <li><a href="services_details.html">Gallery</a></li>  
                                             </ul>
                                         </li>
                                         <li><a href="#">Careers</a>
                                             <ul class="submenu">
-                                            <li><a href="elements.html">Opportunites </a></li>
-                                            <li><a href="project_details.html">Internships</a></li>
+                                            <li><a href="/careers">Opportunites </a></li>
+                                            <li><a href="/internship">Internships</a></li>
                                             <!-- <li><a href="services_details.html">Gallery</a></li>   -->
                                             </ul>
                                         </li>

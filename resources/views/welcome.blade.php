@@ -16,7 +16,7 @@
                                 <div class="hero-text1">
                                    <a href="https://nmicps.gov.in/Home/TechnologyVertical/TechnologyVertical?HostInstitueid=NQ=="> <span data-animation="fadeInUp" data-delay=".3s" >DST NM-ICPS</span></a>
                                 </div>
-                                <h1 data-animation="fadeInUp" data-delay=".5s">TiHAN</h1>
+                                <h1 data-animation="fadeInUp" data-delay=".5s">T<span style="text-transform:lowercase">i</span>HAN</h1>
                                 <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
                                     <h2>IIT Hyderabad</h2>
                                     <h2>IIT Hyderabad</h2>  
@@ -214,11 +214,11 @@
                 <div class="count-clients">
                     <div class="single-counter">
                         <div class="count-number">
-                            <span class="counter">34</span>
+                            <span class="counter">24</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>Industrial</p>
+                            <h5>Workshops</h5>
                         </div>
                     </div>
                 </div>
@@ -227,11 +227,11 @@
                 <div class="count-clients">
                     <div class="single-counter">
                         <div class="count-number">
-                            <span class="counter">76</span>
+                            <span class="counter">39</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>Research</p>
+                            <h5>Publications</h5>
                         </div>
                     </div>
                 </div>
@@ -243,8 +243,8 @@
                             <span class="counter">08</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>R & D</p>
+                            <h5>Collaborators </h5>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                             <div class="front-text">
                                 <h2 class="">Our Projects</h2>
                             </div>
-                            <span class="back-text">Gellary</span>
+                            <span class="back-text">Gallary</span>
                         </div>
                     </div>
                     <div class="col-lg-6">

@@ -60,8 +60,53 @@ Route::get('/donate', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/faculty-hub', function () {
+    return view('team-faculty');
+});
+Route::get('/faculty-fellowship-program', function () {
+    return view('team-fellowship');
+});
 
+Route::get('/tender-invitations', function () {
+    return view('tender');
+});
 
+Route::get('/archives-tender', function () {
+    return view('tender-archives');
+});
+
+Route::get('/staff-details', function () {
+    return view('team-executive');
+});
+Route::get('/skill-development-programs-workshops', function () {
+    return view('skill-development');
+});
+Route::get('/industry-lecture-series', function () {
+    return view('lecture-series');
+});
+Route::get('/entrepreneurship-2', function () {
+    return view('entrepreneurship');
+});
+
+Route::get('/call-for-expression-of-interest', function () {
+    return view('call-for-expression-of-interest');
+});
+
+Route::get('/skill-development-proposal', function () {
+    return view('skill-development-proposal');
+});
+Route::get('/internship', function () {
+    return view('internship');
+});
+Route::get('/careers', function () {
+    return view('careers');
+});
+Route::get('/press-releases', function () {
+    return view('new-press-release');
+});
+Route::get('/events', function () {
+    return view('events');
+});
 /* 
 	Admin panel routes
 */
