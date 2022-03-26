@@ -118,6 +118,9 @@
                 <a class="dropdown-item" href="./admin-job" >
                   Job
                 </a>
+                <a class="dropdown-item" href="./admin-press" >
+                  Press Releases
+                </a>
               </div>
             </div>
           </div>
