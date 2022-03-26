@@ -73,24 +73,24 @@
                                         </li>
                                         <li><a href="#">Activity</a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">Skill Development</a></li>
-                                                <li><a href="project_details.html">Lecture Series</a></li>
-                                                <li><a href="services_details.html">Entrepreneurship</a></li>
-                                                <li><a href="services_details.html">Call for proposal</a></li>
-                                                <li><a href="services_details.html">Skill Development</a></li>
+                                                <li><a href="/skill-development-programs-workshops">Skill Development</a></li>
+                                                <li><a href="/industry-lecture-series">Lecture Series</a></li>
+                                                <li><a href="/entrepreneurship-2">Entrepreneurship</a></li>
+                                                <li><a href="/call-for-expression-of-interest">Call for proposal</a></li>
+                                                <li><a href="/skill-development-proposal">Skill Development Call for Proposal</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">News</a>
                                             <ul class="submenu">
-                                            <li><a href="elements.html">Press Releases</a></li>
-                                            <li><a href="project_details.html">Event</a></li>
+                                            <li><a href="/press-releases">Press Releases</a></li>
+                                            <li><a href="/events">Event</a></li>
                                             <li><a href="services_details.html">Gallery</a></li>  
                                             </ul>
                                         </li>
                                         <li><a href="#">Careers</a>
                                             <ul class="submenu">
-                                            <li><a href="elements.html">Opportunites </a></li>
-                                            <li><a href="project_details.html">Internships</a></li>
+                                            <li><a href="/careers">Opportunites </a></li>
+                                            <li><a href="/internship">Internships</a></li>
                                             <!-- <li><a href="services_details.html">Gallery</a></li>   -->
                                             </ul>
                                         </li>

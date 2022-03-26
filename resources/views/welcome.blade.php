@@ -8,7 +8,7 @@
     <!-- slider Area Start-->
     <div class="slider-area ">
         <div class="slider-active">
-            <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="/img/hero/4    .jpeg">
+            <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="/img/hero/4.jpeg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-11">
@@ -214,11 +214,11 @@
                 <div class="count-clients">
                     <div class="single-counter">
                         <div class="count-number">
-                            <span class="counter">34</span>
+                            <span class="counter">24</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>Industrial</p>
+                            <h5>Workshops</h5>
                         </div>
                     </div>
                 </div>
@@ -227,11 +227,11 @@
                 <div class="count-clients">
                     <div class="single-counter">
                         <div class="count-number">
-                            <span class="counter">76</span>
+                            <span class="counter">39</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>Research</p>
+                            <h5>Publications</h5>
                         </div>
                     </div>
                 </div>
@@ -243,8 +243,8 @@
                             <span class="counter">08</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>R & D</p>
+                            <h5>Collaborators </h5>
                         </div>
                     </div>
                 </div>

@@ -29,10 +29,10 @@
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
-							<div class="serial">#</div>
-							<div class="country">Countries</div>
-							<div class="visit">Visits</div>
-							<div class="visit">Percentages</div>
+							<div class="serial">Sr. No.</div>
+							<div class="country">Faculty Name</div>
+							<div class="visit">Name of Institute</div>
+							<div class="visit">Department</div>
 						</div>
 						<div class="table-row">
 							<div class="serial">01</div>
