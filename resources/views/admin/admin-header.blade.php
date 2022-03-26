@@ -121,6 +121,9 @@
                 <a class="dropdown-item" href="./admin-press" >
                   Press Releases
                 </a>
+                <a class="dropdown-item" href="./admin-events" >
+                  Events
+                </a>
               </div>
             </div>
           </div>
