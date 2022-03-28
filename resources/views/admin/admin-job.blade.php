@@ -83,7 +83,7 @@
       <div class="row">
         <div class="col-md-6 col-xl-12">
           <label class="form-label required">Discription:</label>
-          <input type="textarea" class = "form-control" id="description" name="description" placeholder="Discription" required><br>
+          <textarea class = "form-control" id="description" name="description" placeholder="Discription" rows="3" required></textarea><br>
         </div>
       </div>
       <div class="row">
