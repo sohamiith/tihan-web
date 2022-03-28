@@ -108,21 +108,21 @@
       </div>
       <div class="row">
         <div class="col-md-3 col-xl-6">
-          <label class="form-label required">Upload File1:</label>
+          <label class="form-label ">Upload File1:</label>
           <input type="file" id="file1" name="file1">
         </div>
         <div class="col-md-3 col-xl-6">
-          <label class="form-label required">Upload File2:</label>
+          <label class="form-label ">Upload File2:</label>
           <input type="file" id="file2" name="file2">
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-xl-6">
-          <label class="form-label required">Upload File3:</label>
+          <label class="form-label ">Upload File3:</label>
           <input type="file" id="file3" name="file3">
         </div>
         <div class="col-md-3 col-xl-6">
-          <label class="form-label required">Upload File4:</label>
+          <label class="form-label ">Upload File4:</label>
           <input type="file" id="file4" name="file4">
         </div>
       </div>

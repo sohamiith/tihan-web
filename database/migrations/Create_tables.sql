@@ -135,7 +135,7 @@ created_at timestamp
 create table jobs(
 seq_no int PRIMARY KEY AUTO_INCREMENT,
 title varchar(255),
-description varchar(255),
+description text,
 document varchar(255),
 link varchar(255),
 updated_at timestamp,
