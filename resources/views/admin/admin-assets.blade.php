@@ -47,19 +47,19 @@
                         <tbody id="list_asset">
                           @foreach($assets as $asset)
                             <tr id="row_asset_{{ $asset->seq_no}}">
-                              <td class="text-muted">{{$asset->asste_id}}</td>
+                              <td class="text-muted">{{$asset->asset_id}}</td>
                               <td class="text-muted">{{$asset->name}}</td>
                               <td class="text-muted">{{$asset->category_book}}</td>
                               <td class="text-muted">{{$asset->category_fin}}</td>
                               <td class="text-muted">{{$asset->identification}}</td>
-                              <td class="text-muted">{{$asset->lift}}</td>
+                              <td class="text-muted">{{$asset->life}}</td>
                               <td class="text-muted">{{$asset->user}}</td>
                               <td class="text-muted">{{$asset->order_date}}</td>
                               <td class="text-muted">{{$asset->supplier_name}}</td>
                               <td class="text-muted">{{$asset->voucher}}</td>
                               <td class="text-muted">{{$asset->cost}}</td>
                               <td class="text-muted">{{$asset->discount}}</td>
-                              <td class="text-muted">{{$asset->recive_date}}</td>
+                              <td class="text-muted">{{$asset->receive_date}}</td>
                               <td class="text-muted">{{$asset->remaining}}</td>
                               <td class="text-muted">{{$asset->days}}</td>
                               <td class="text-end">
@@ -68,7 +68,6 @@
                                   <div class="dropdown-menu dropdown-menu-end">
                                     <a class="dropdown-item" href="#div_asset" id="edit_asset" data-id="{{ $asset->seq_no }}">View/Edit</a>
                                     <a class="dropdown-item" href="#" id="delete_asset" data-id="{{ $asset->seq_no }}">Delete</a>
-                                    <a class="dropdown-item" id="active_asset" data-id="{{ $asset->seq_no }}">Inactive</a>
                                   </div>
                                 </span>
                               </td>
@@ -91,7 +90,7 @@
 <div id="div_asset" class="overlay">
   <div class="popup">
     <div class="modal-header">
-      <h2 id = "modal_title"></h2><br>
+      <h2>Add Assets</h2><br>
       <a class="close" href="#">&times;</a>
     </div>
     <div class="modal-body">
@@ -101,7 +100,7 @@
       <div class="row">
         <div class="col-md-3 col-xl-6">
           <label class="form-label required">Asset ID:</label>
-          <input type="text" class = "form-control" id="asste_id" name="asste_id" placeholder="Asset ID" required><br>
+          <input type="text" class = "form-control" id="asset_id" name="asset_id" placeholder="Asset ID" required><br>
         </div>
         <div class="col-md-3 col-xl-6">
           <label class="form-label required">Name:</label>
@@ -174,7 +173,7 @@
       <div class="row">
         <div class="col-md-3 col-xl-6">
           <label class="form-label required">Supplier Name:</label>
-          <input type="text" class = "form-control" id="user" name="user" class="form-control" placeholder="Use"><br>
+          <input type="text" class = "form-control" id="supplier_name" name="supplier_name" class="form-control" placeholder="Supplier Name"><br>
         </div>
         <div class="col-md-3 col-xl-6">
           <label class="form-label">Voucher:</label>
@@ -196,7 +195,16 @@
       <div class="row">
         <div class="col-md-3 col-xl-6">
           <label class="form-label">Receive Date:</label>
-          <input type="date" class = "form-control" id="recive_date" name="recive_date" class="form-control mb-2"><br>
+          <input type="date" class = "form-control" id="receive_date" name="receive_date" class="form-control mb-2"><br>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-md-3 col-xl-6">
+          <input type="button" class="btn btn-secondary w-100" value="Clear" id="clear_data">
+        </div>
+        <div class="col-md-3 col-xl-6">
+          <input type="submit" class="btn btn-success w-100" value="Save">
         </div>
       </div>
     </form>
@@ -218,7 +226,6 @@
     $("#form_asset").trigger('reset');
     document.getElementById("seq_no").value = '';
     document.getElementById("active").value = '';
-    $("#modal_title").html('Add New Assets');
   });
 
   // Clear form data
@@ -243,36 +250,24 @@
     }
   });
 
-  // Active/Inactive Student
-  $("body").on('click','#active_asset',function(){
-    var seq_no = $(this).data('id');
-    $.ajax({
-      type:'GET',
-      url: "admin-assets/active/" + seq_no
-    }).done(function(res){
-      $("#row_asset_" + seq_no).remove();
-    });
-  });
-
   // Update Students
   $("body").on('click','#edit_asset',function(){
     var seq_no = $(this).data('id');
     $.get('admin-assets/'+seq_no,function(res){
-        $("#modal_title").html('Edit Assets Data');
         $("#seq_no").val(res[0].seq_no);
         $("#asste_id").val(res[0].asste_id);
         $("#name").val(res[0].name);
         $("#category_book").val(res[0].category_book);
         $("#category_fin").val(res[0].category_fin);
         $("#identification").val(res[0].identification);
-        $("#lift").val(res[0].lift);
+        $("#life").val(res[0].life);
         $("#user").val(res[0].user);
         $("#order_date").val(res[0].order_date);
         $("#supplier_name").val(res[0].supplier_name);
         $("#voucher").val(res[0].voucher);
         $("#cost").val(res[0].cost);
         $("#discount").val(res[0].discount);
-        $("#recive_date").val(res[0].recive_date);
+        $("#receive_date").val(res[0].receive_date);
         $("#remaining").val(res[0].remaining);
         $("#days").val(res[0].days);
     });
@@ -296,22 +291,22 @@
       else
       {
         var row = '<tr id="row_asset_'+ res.seq_no + '">';
-        row += '<td class="text-muted">' + res.asste_id + '</td>';
+        row += '<td class="text-muted">' + res.asset_id + '</td>';
         row += '<td class="text-muted">' + res.name + '</td>';
         row += '<td class="text-muted">' + res.category_book + '</td>';
         row += '<td class="text-muted">' + res.category_fin + '</td>';
         row += '<td class="text-muted">' + res.identification + '</td>';
-        row += '<td class="text-muted">' + res.lift + '</td>';
+        row += '<td class="text-muted">' + res.life + '</td>';
         row += '<td class="text-muted">' + res.user + '</td>';
         row += '<td class="text-muted">' + res.order_date + '</td>';
         row += '<td class="text-muted">' + res.supplier_name + '</td>';
         row += '<td class="text-muted">' + res.voucher + '</td>';
         row += '<td class="text-muted">' + res.cost + '</td>';
         row += '<td class="text-muted">' + res.discount + '</td>';
-        row += '<td class="text-muted">' + res.recive_date + '</td>';
+        row += '<td class="text-muted">' + res.receive_date + '</td>';
         row += '<td class="text-muted">' + res.remaining + '</td>';
         row += '<td class="text-muted">' + res.days + '</td>';
-        row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#div_asset" id="edit_asset" data-id="' + res.seq_no + '">View/Edit</a> <a class="dropdown-item" href="#" id="delete_asset" data-id="' + res.seq_no +'">Delete</a> <a class="dropdown-item" id="active_asset" data-id="'+res.seq_no +'">Inactive</a> </div></span> </td>';
+        row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#div_asset" id="edit_asset" data-id="' + res.seq_no + '">View/Edit</a> <a class="dropdown-item" href="#" id="delete_asset" data-id="' + res.seq_no +'">Delete</a> </div></span> </td>';
 
         if($("#seq_no").val()){
             $("#row_asset_" + res.seq_no).replaceWith(row);

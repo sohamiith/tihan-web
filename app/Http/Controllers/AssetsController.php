@@ -31,14 +31,6 @@ class AssetsController extends Controller
 	public function listAssets(Request $request)
     {
     	$query = Assets::query();
-    	/*if($active = $request->get('active'))
-    	{
-    		$query->where('active', $active);
-    	}
-    	else
-    	{
-    		$query->where('active', 1);
-    	}*/
 
     	if($orderBy = $request->get('orderBy'))
     	{
@@ -109,7 +101,7 @@ class AssetsController extends Controller
         return response()->json($data);
     }
 
-    public function deleteAssets($seq_no)
+    public function deleteAsset($seq_no)
     {
         Assets::where('seq_no',$seq_no)->delete();
         return response()->json('Deleted Successfully');
