@@ -16,7 +16,7 @@ class LecturesController extends Controller
     public function indexLectures(Request $request)
     {
         $lecture = $this->listLecture($request);
-        return view('office-lecture',['lectures'=>$lecture]); 
+        return view('lecture-series',['lectures'=>$lecture]); 
     }
 
     public function getLecture($seq_no)

@@ -16,7 +16,7 @@ class TendersController extends Controller
     public function indexTenders(Request $request)
     {
         $tenders = $this->listTender($request);
-        return view('office-tenders',['tenders'=>$tenders]); 
+        return view('tender',['tenders'=>$tenders]); 
     }
 
     public function getTender($seq_no)

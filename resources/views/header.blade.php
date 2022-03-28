@@ -32,7 +32,7 @@
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
                                 <!-- logo-1 -->
-                                <a href="/" class="big-logo"><img src="/img/logo/logo horizontal-07-02.png" width=100% height:=100% alt=""></a>
+                                <a href="/" class="big-logo"><img src="/img/logo/Tihan-removebg-preview.png" width=100% height:=100% alt=""></a>
                                 <!-- logo-2 -->
                                 <!-- <a href="index.html" class="small-logo"><img src="assets/img/logo/logo horizontal-07-02.png" alt=""></a> -->
                             </div>

@@ -65,7 +65,7 @@ Kandi, Sangareddy – 502284</p>
                                 </div>
                                 <!-- Map -->
                                 <div class="map-footer">
-                                    <img src="/img/gallery/map-footer.png" alt="">
+                                    <img src="/img/gallery/imgbin_india-map-png (1).png" style="width:50%" alt="">
                                 </div>
                             </div>
                         </div>

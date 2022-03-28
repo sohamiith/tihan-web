@@ -44,6 +44,7 @@ th, td {
         </div>
         <!-- slider Area End-->
         <!-- Services Details Start -->
+      
         <div class="services-details-area">
             <div class="container">
                 <div class="row">
@@ -64,27 +65,46 @@ th, td {
                             </blockquote>
                                             <table>
                                             <thead>
-                                                <tr>
+                                                <tr >
                                                 <th>Date & Time</th>
                                                 <th>Name of Seminar/Workshop</th>
                                                 <th>For More Information</th>
                                                 <th>No. of Participants</th>
                                                 </tr>
-                                            </thead>
-                                            <tr>
-                                                <td>05-03-2022 to 06-03-2022</td>
-                                                <td>Hands on Workshop on UAV & UGV at NIT Andhra Pradesh</td>
-                                                <td> <a href="#"> click here	 </a></td>
-                                                <td>	58</td>
-                                                </tr>
-                                                <tr>
-                                                <td>05-03-2022 to 06-03-2022</td>
-                                                <td>Embedded Design and Development using Free / Open Source Tools
-Host institute- CDAC Trivandrum</td>
-                                                <td> <a href="#"> click here	 </a></td>
-                                                <td>	58</td>
-                                                </tr>
                                                 
+                                            </thead>
+                                            <?php
+        $total = 0;
+        $total1=0;
+        $start=$skills->last() ;
+        $start1=$start['start_date'];
+        $end = $skills[0];
+        $end1=$end['end_date'];
+    ?>
+                                            @foreach($skills as $skill)
+                        
+                                            <tr id="row_skills_{{ $skill->seq_no}}">
+                                                <td>{{$skill->start_date}} to {{$skill->end_date}} </td>
+                                                <td>{{$skill->title}}</td>
+                                                <?php
+                                                 $total1 +=1;
+                                                 ?>
+                                                <td> <a href="{{$skill->document}}"> click here	 </a></td>
+                                                <td>{{$skill->participants}}</td>
+                                                <?php
+                                                 $total += ($skill->participants);
+                                                 ?>
+                                                </tr>
+                                                @endforeach    
+                                                
+
+                                                <tr id="row_skills_{{ $skill->seq_no}}">
+                                                <td>{{$start1 }} to {{$end1}}  </td>
+                                                <td><b>  Total Seminar/Workshop = {{$total1}}</b></td>
+                                                <td> </td>
+                                                <td>{{$total}}</td>
+                                                <!-- total::where('participants',$participants)->sum('participants'); -->
+                                                                                                </tr>
                                                 </table>
                                                 <br><br>
         <!-- Services Details End -->

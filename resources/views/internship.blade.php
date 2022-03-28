@@ -59,14 +59,15 @@ th, td {
                                                 <th>End Date</th>
                                                 </tr>
                                             </thead>
-                                            <tr>
-                                                <td>12-07-2021</td>
-                                                <td><a href="https://drive.google.com/file/d/1b2N6fXN_CW7KGz4EvbPHkbmf4WG5jAfk/view" >Internship Opportunity at TiHAN</a></td>
-                                                <td><a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSds-VW4TORsM0S0L4FaTPu1bTa_YLvsffGzjaVnRBrQAJujnw/closedform" >click here</a>	</td>
-                                                <td>	10-09-2021</td>
+                                            @foreach($internships as $internship)
+                                                <tr id="row_internship_{{ $internship->seq_no}}">
+                                                    <td>{{$internship->start_date}}</td>
+                                                    <td><a href="{{$internship->document}}" target="_blank">{{$internship->title}}</a></td>
+                                                    <td><a href="{{$internship->link}}" >click here</a>	</td>
+                                                    <td>{{$internship->end_date}}</td>
                                                 
                                                 </tr>
-
+                                            @endforeach
                                                 </table>
                                                 <br><br>
         <!-- Services Details End -->

@@ -62,14 +62,16 @@ th, td {
                             <th>End Date</th>
                             </tr>
                         </thead>
-                        <tr>
-                            <td>16-02-2022</td>
-                            <td>NMICPS TiHAN Foundation invites online Tender for Supply, Installation, Commissioning and Training of “Scissor Lift”. <br>
-                                <b>Tender Ref.No: TIHAN-IITH/PUR/2021/T029</b></td>
-                            <td> <a href="#"> Tender File </a></td>
-                            <td>09-03-2022</td>
+                        @foreach($tenders as $tender)
+                        @if($tender->end_date >= date('Y-m-d'))
+                        <tr id="row_tenders_{{ $tender->seq_no}}">
+                            <td>{{$tender->start_date}}</td>
+                            <td>{{$tender->description}}</td>
+                            <td> <a href="{{$tender->document}}"> Tender File </a></td>
+                            <td>{{$tender->end_date}}</td>
                             </tr>
-                            
+                        @endif
+                        @endforeach
                             </table>
                             <br><br>
                             <a href="/archives-tender"> Archives</a></p>
