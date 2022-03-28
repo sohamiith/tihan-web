@@ -57,7 +57,7 @@
                             <!-- card ONE -->
                             <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">           
                                 <div class="project-caption">
-                                    <!-- <?php $count = 0; ?>
+                                    <?php $count = 0; ?>
                                     @foreach($students as $student)
                                         <?php $count = $count + 1;
                                     
@@ -82,8 +82,8 @@
                                             $count = 0;?>
                                             </div>
                                         <?php }?>
-                                    @endforeach -->
-                                    <div class="row">
+                                    @endforeach
+                                    <!-- <div class="row">
                                         <div class="col-lg-3 col-md-3">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
@@ -160,8 +160,8 @@
                                                     <h6><a href="project_details.html">Shridharam Tiwari</a></h6>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3">
+                                        </div> -->
+                                        <!-- <div class="col-lg-3 col-md-3">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
                                                     <img src="/img/gallery/tihan_passport_pic.jpg" alt="">
@@ -185,7 +185,7 @@
                                                     <h6><a href="project_details.html">Lakshmi Gayathri Gudupudi</a></h6>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     </div>
 

@@ -16,7 +16,7 @@
                                 <div class="hero-text1">
                                    <a href="https://nmicps.gov.in/Home/TechnologyVertical/TechnologyVertical?HostInstitueid=NQ=="> <span data-animation="fadeInUp" data-delay=".3s" >DST NM-ICPS</span></a>
                                 </div>
-                                <h1 data-animation="fadeInUp" data-delay=".5s">TiHAN</h1>
+                                <h1 data-animation="fadeInUp" data-delay=".5s">T<span style="text-transform:lowercase">i</span>HAN</h1>
                                 <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
                                     <h2>IIT Hyderabad</h2>
                                     <h2>IIT Hyderabad</h2>  
@@ -148,7 +148,7 @@
                         <br><br>The vision of this hub is to become a global destination for next generation smart mobility technologies that utilize reliable and efficient autonomous navigation and data acquisition systems in the next five years. The mission of this hub is to accelerate the adoption of the autonomous navigation and next generation smart mobility technologies for use in the intelligent transportation and agricultural applications, not only in the Indian but also in global context.
                         
                         </p>
-                    <a href="about.html" class="btn red-btn2" >read more</a>
+                    <a href="/About-us-Foundation" class="btn red-btn2" >read more</a>
                 </div>
             </div>
             <div class="right-content"style="padding-bottom:100px;">
@@ -214,11 +214,11 @@
                 <div class="count-clients">
                     <div class="single-counter">
                         <div class="count-number">
-                            <span class="counter">34</span>
+                            <span class="counter">24</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>Industrial</p>
+                            <h5>Workshops</h5>
                         </div>
                     </div>
                 </div>
@@ -227,11 +227,11 @@
                 <div class="count-clients">
                     <div class="single-counter">
                         <div class="count-number">
-                            <span class="counter">76</span>
+                            <span class="counter">39</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>Research</p>
+                            <h5>Publications</h5>
                         </div>
                     </div>
                 </div>
@@ -243,8 +243,8 @@
                             <span class="counter">08</span>
                         </div>
                         <div class="count-text">
-                            <p>Machinery</p>
-                            <h5>Tools</h5>
+                            <p>R & D</p>
+                            <h5>Collaborators </h5>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                             <div class="front-text">
                                 <h2 class="">Our Projects</h2>
                             </div>
-                            <span class="back-text">Gellary</span>
+                            <span class="back-text">Gallary</span>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -297,10 +297,10 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-project mb-30">
                                             <div class="project-img">
-                                                <img src="/img/gallery/project1.png" alt="">
+                                                <img src="/img/gallery/slide6-1.webp" alt="">
                                             </div>
                                             <div class="project-cap">
-                                                <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
+                                                <a href="/img/gallery/slide6-1.webp" class="plus-btn"><i class="ti-plus"></i></a>
                                                 <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
                                                 <h4><a href="project_details.html">Factory</a></h4> -->
                                             </div>
@@ -309,7 +309,19 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-project mb-30">
                                             <div class="project-img">
-                                                <img src="/img/gallery/project2.png" alt="">
+                                                <img src="/img/gallery/slide5-1.webp" alt="">
+                                            </div>
+                                            <div class="project-cap">
+                                                <a href="" class="plus-btn"><i class="ti-plus"></i></a>
+                                               <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
+                                                <h4><a href="project_details.html">Factory</a></h4> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="single-project mb-30">
+                                            <div class="project-img">
+                                                <img src="/img/gallery/slide4-1.webp" alt="">
                                             </div>
                                             <div class="project-cap">
                                                 <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
@@ -321,7 +333,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-project mb-30">
                                             <div class="project-img">
-                                                <img src="/img/gallery/project3.png" alt="">
+                                                <img src="/img/gallery/slide3-1.webp" alt="">
                                             </div>
                                             <div class="project-cap">
                                                 <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
@@ -333,7 +345,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-project mb-30">
                                             <div class="project-img">
-                                                <img src="/img/gallery/project4.png" alt="">
+                                                <img src="/img/gallery/slide2-3.webp" alt="">
                                             </div>
                                             <div class="project-cap">
                                                 <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
@@ -345,19 +357,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-project mb-30">
                                             <div class="project-img">
-                                                <img src="/img/gallery/project5.png" alt="">
-                                            </div>
-                                            <div class="project-cap">
-                                                <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                               <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                <h4><a href="project_details.html">Factory</a></h4> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="single-project mb-30">
-                                            <div class="project-img">
-                                                <img src="/img/gallery/project6.png" alt="">
+                                                <img src="/img/gallery/slide1-3.webp" alt="">
                                             </div>
                                             <div class="project-cap">
                                                 <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
@@ -831,19 +831,18 @@
                     <!-- single-news -->
                     <div class="single-news mb-30">
                         <div class="news-img">
-                            <img src="/img/david/david_1.png" alt="">
+                            <!-- <img src="/img/david/david_1.png" alt="">
                             <div class="news-date text-center">
                                 <span>24</span>
                                 <p>Now</p>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="news-caption">
                             <ul class="david-info">
-                                <li> | &nbsp; &nbsp;  Porperties</li>
+                                <li> | &nbsp; &nbsp; Field Fellow</li>
                             </ul>
-                            <h2><a href="single-blog.html">Footprints in Time is perfect
-                                House in Kurashiki</a></h2>
-                            <a href="single-blog.html" class="d-btn">Read more »</a>
+                            <h2><a href="#">Applications are invited for the post of field fellow Job Responsibilities – Assist in all technical & maintenance activities in the testbed …</a></h2>
+                            <a href="/careers" class="d-btn">Read more »</a>
                         </div>
                     </div>
                 </div>
@@ -851,19 +850,18 @@
                     <!-- single-news -->
                     <div class="single-news mb-30">
                         <div class="news-img">
-                            <img src="/img/david/david_2.png" alt="">
+                            <!-- <img src="/img/david/david_2.png" alt=""> -->
                             <div class="news-date text-center">
-                                <span>24</span>
-                                <p>Now</p>
+                                <!-- <span>24</span>
+                                <p>Now</p> -->
                             </div>
                         </div>
                         <div class="news-caption">
                             <ul class="david-info">
-                                <li> | &nbsp; &nbsp;  Porperties</li>
+                                <li> | &nbsp; &nbsp;  Startup Manager</li>
                             </ul>
-                            <h2><a href="single-blog.html">Footprints in Time is perfect
-                                House in Kurashiki</a></h2>
-                            <a href="single-blog.html" class="d-btn">Read more » </a>
+                            <h2><a href="#">The primary focus on : Develop overall program strategy, including new initiatives, criteria for participation and details of the offering. Identifying potential Corporates / Enterprises in investing in TiHAN’s Start-ups. </a></h2>
+                            <a href="/careers" class="d-btn">Read more » </a>
                         </div>
                     </div>
                 </div>

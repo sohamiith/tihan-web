@@ -16,7 +16,7 @@ class InternshipsController extends Controller
     public function indexInternships(Request $request)
     {
         $internship = $this->listInternship($request);
-        return view('office-internship',['internships'=>$internship]); 
+        return view('internship',['internships'=>$internship]); 
     }
 
     public function getInternship($seq_no)

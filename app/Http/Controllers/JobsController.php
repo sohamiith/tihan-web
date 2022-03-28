@@ -16,7 +16,7 @@ class JobsController extends Controller
     public function indexJobs(Request $request)
     {
         $job = $this->listJob($request);
-        return view('office-job',['jobs'=>$job]); 
+        return view('careers',['jobs'=>$job]); 
     }
 
     public function getJob($seq_no)

@@ -16,7 +16,7 @@ class SkillsController extends Controller
     public function indexSkills(Request $request)
     {
         $skills = $this->listSkill($request);
-        return view('office-skills',['skills'=>$skills]); 
+        return view('skill-development',['skills'=>$skills]); 
     }
 
     public function getSkill($seq_no)
