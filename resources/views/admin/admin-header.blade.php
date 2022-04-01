@@ -122,7 +122,10 @@
                   Press Releases
                 </a>
                 <a class="dropdown-item" href="./admin-events" >
-                  Events
+                  News Events
+                </a>
+                <a class="dropdown-item" href="./admin-latestevent" >
+                  Latest Events
                 </a>
               </div>
             </div>

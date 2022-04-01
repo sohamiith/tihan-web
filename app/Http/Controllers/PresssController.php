@@ -95,6 +95,7 @@ class PresssController extends Controller
     	else
     	{
     		$press->save();
+            $data['seq_no'] = $press->id;
     	}
         return response()->json($data);
     }
