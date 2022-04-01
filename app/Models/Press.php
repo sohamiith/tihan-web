@@ -16,6 +16,10 @@ class Press extends Model
 		"document",
 		"file_name",
 		"link",
+		"fb_link",
+		"insta_link",
+		"ld_link",
+		"tw_link",
 		"updated_at",
 		"created_at"
     ];

@@ -30,6 +30,11 @@
                             <th>Release Date</th>
                             <th>Document</th>
                             <th>Image</th>
+                            <th>Facebook</th>
+                            <th>linkedin</th>
+                            <th>Twitter</th>
+                            <th>Instagram</th>
+                            <th></th>
                             <th class="w-1"></th>
                           </tr>
                         </thead>
@@ -40,6 +45,10 @@
                               <td class="text-muted">{{$press->release_date}}</td>
                               <td class="text-muted"><a target="_blank" href="{{$press->document}}">View</a></td>
                               <td class="text-muted"><a target="_blank" href="{{$press->link}}">Image</a></td>
+                              <td class="text-muted"><a target="_blank" href="{{$press->fb_link}}">Link</a></td>
+                              <td class="text-muted"><a target="_blank" href="{{$press->ld_link}}">Link</a></td>
+                              <td class="text-muted"><a target="_blank" href="{{$press->tw_link}}">Link</a></td>
+                              <td class="text-muted"><a target="_blank" href="{{$press->insta_link}}">Link</a></td>
                               <td class="text-end">
                                 <span class="dropdown">
                                   <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
@@ -98,6 +107,26 @@
         <div class="col-md-3 col-xl-6">
           <label class="form-label">Upload PDF File:</label>
           <input type="file" id="file_name" name="file_name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xl-6">
+          <label class="form-label">Facebook Link:</label>
+          <input type="text" class = "form-control" id="fb_link" name="fb_link" placeholder="Facebook Link"><br>
+        </div>
+        <div class="col-md-3 col-xl-6">
+          <label class="form-label">Twitter Link:</label>
+          <input type="text" class = "form-control" id="tw_link" name="tw_link" placeholder="Twitter Link"><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xl-6">
+          <label class="form-label">Instagram Link:</label>
+          <input type="text" class = "form-control" id="insta_link" name="insta_link" placeholder="Instagram Link"><br>
+        </div>
+        <div class="col-md-3 col-xl-6">
+          <label class="form-label">Linkedin link:</label>
+          <input type="text" class = "form-control" id="ld_link" name="ld_link" placeholder="Linkedin Link"><br>
         </div>
       </div>
       <br><br>
@@ -159,6 +188,10 @@
         $("#description").val(res[0].description);
         $("#release_date").val(res[0].release_date);
         $("#document").val(res[0].document);
+        $("#fb_link").val(res[0].fb_link);
+        $("#insta_link").val(res[0].insta_link);
+        $("#ld_link").val(res[0].ld_link);
+        $("#tw_link").val(res[0].tw_link);
         $("#file_name").val(res[0].file_name);
     });
   });
@@ -195,6 +228,10 @@
           row += '<td class="text-muted">' + res.release_date + '</td>';
           row += '<td class="text-muted"><a target="_blank" href=' + res.document + '>View</a></td>';
           row += '<td class="text-muted"><a target="_blank" href=' + res.link + '>Image</a></td>';
+          row += '<td class="text-muted"><a target="_blank" href=' + res.fb_link + '>Link</a></td>';
+          row += '<td class="text-muted"><a target="_blank" href=' + res.ld_link + '>Link</a></td>';
+          row += '<td class="text-muted"><a target="_blank" href=' + res.tw_link + '>Link</a></td>';
+          row += '<td class="text-muted"><a target="_blank" href=' + res.insta_link + '>Link</a></td>';
           row += '<td class="text-end"> <span class="dropdown"> <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button> <div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#div_press" id="edit_press" data-id="' + res.seq_no + '">View/Edit</a> <a class="dropdown-item" href="#" id="delete_press" data-id="' + res.seq_no +'">Delete</a></div></span> </td>';
 
           if($("#seq_no").val()){
