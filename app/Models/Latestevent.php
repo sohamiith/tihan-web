@@ -5,21 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Press extends Model
+class Latestevent extends Model
 {
     use HasFactory;
     protected $fillable = [
     	"seq_no",
 		"title",
-		"description",
-		"release_date",
-		"document",
-		"file_name",
-		"link",
-		"fb_link",
-		"insta_link",
-		"ld_link",
-		"tw_link",
+		"event_date",
+		"file",
+		"url",
+		"doc",
 		"updated_at",
 		"created_at"
     ];

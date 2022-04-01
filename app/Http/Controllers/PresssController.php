@@ -63,6 +63,10 @@ class PresssController extends Controller
             "description" => $request->get('description'),
             "release_date" => $request->get('release_date'),
             "document" => $request->get('document'),
+            "fb_link" => $request->get('fb_link'),
+            "tw_link" => $request->get('tw_link'),
+            "insta_link" => $request->get('insta_link'),
+            "ld_link" => $request->get('ld_link'),
             "file_name" => $path ? basename($path) : $path,
             "link" => $path ? Storage::disk(name:'s3')->url($path) : $path,
             "updated_at" => date("Y-m-d h:i:s"),
@@ -91,6 +95,7 @@ class PresssController extends Controller
     	else
     	{
     		$press->save();
+            $data['seq_no'] = $press->id;
     	}
         return response()->json($data);
     }

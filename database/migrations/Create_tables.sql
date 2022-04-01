@@ -166,6 +166,11 @@ updated_at timestamp,
 created_at timestamp
 );
 
+alter table tihan.presses add column fb_link varchar(255) default null after link;
+alter table tihan.presses add column tw_link varchar(255) default null after fb_link;
+alter table tihan.presses add column insta_link varchar(255) default null after tw_link;
+alter table tihan.presses add column ld_link varchar(255) default null after insta_link;
+
 create table events(
 seq_no int PRIMARY KEY AUTO_INCREMENT,
 title varchar(255),
@@ -178,6 +183,17 @@ file3 varchar(255),
 url3 varchar(255),
 file4 varchar(255),
 url4 varchar(255),
+updated_at timestamp,
+created_at timestamp
+);
+
+create table latestevents(
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+title varchar(255),
+event_date date,
+file varchar(255),
+url varchar(255),
+doc varchar(255),
 updated_at timestamp,
 created_at timestamp
 );
