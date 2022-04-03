@@ -1,3 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- Preloader Start -->
+<!-- <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="/img/logo/Tihan-removebg-preview.png"  alt="">
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Preloader Start -->
 <header>
     <!-- Header Start -->
     <div class="header-area header-transparent">
@@ -32,7 +48,7 @@
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
                                 <!-- logo-1 -->
-                                <a href="/" class="big-logo"><img src="/img/logo/Tihan-removebg-preview.png" width=100% height:=100% alt=""></a>
+                                <a href="/" class="big-logo"><img src="/img/logo/logo horizontal-07-02.png" width=100% height:=100% alt=""></a>
                                 <!-- logo-2 -->
                                 <!-- <a href="index.html" class="small-logo"><img src="assets/img/logo/logo horizontal-07-02.png" alt=""></a> -->
                             </div>
@@ -84,7 +100,7 @@
                                             <ul class="submenu">
                                             <li><a href="/press-releases">Press Releases</a></li>
                                             <li><a href="/events">Event</a></li>
-                                            <li><a href="services_details.html">Gallery</a></li>  
+                                            <li><a href="/gallery">Gallery</a></li>  
                                             </ul>
                                         </li>
                                         <li><a href="#">Careers</a>
@@ -116,15 +132,7 @@
     <!-- Header End -->
 </header>
 
-<!-- Preloader Start -->
-<div id="preloader-active">
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="preloader-inner position-relative">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
-                <img src="/img/logo/Tihan-removebg-preview.png"  alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Preloader Start -->
+
+</body>
+
+</html>

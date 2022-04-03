@@ -74,9 +74,7 @@ Route::get('/faculty-fellowship-program', function () {
 // });
 Route::get("/tender-invitations", [TendersController::class,'indexTenders']);
 
-Route::get('/archives-tender', function () {
-    return view('tender-archives');
-});
+Route::get('/archives-tender', [TendersController::class,'ArchiveTenders']);
 
 Route::get('/staff-details', function () {
     return view('team-executive');
@@ -104,11 +102,13 @@ Route::get("/internship", [InternshipsController::class,'indexInternships']);
 
 Route::get('/careers',[JobsController::class,'indexJobs'] );
 
-Route::get('/press-releases', function () {
-    return view('new-press-release');
-});
+Route::get('/press-releases',[PresssController::class,'indexPress'] );
 Route::get('/events', function () {
     return view('events');
+});
+
+Route::get('/gallery', function () {
+    return view('gallery');
 });
 /* 
 	Admin panel routes

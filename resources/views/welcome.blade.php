@@ -1,10 +1,41 @@
-@extends('master')
+<!-- @extends('master') -->
 @section('content')
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TiHAN-IIT Hyderabad</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" type="image/x-icon" href="/img/logo/logo vector white-02.png">
 
+	<!-- CSS here -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/slicknav.css">
+        <link rel="stylesheet" href="/css/animate.min.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/css/themify-icons.css">
+        <link rel="stylesheet" href="/css/slick.css">
+        <link rel="stylesheet" href="/css/nice-select.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <link rel="stylesheet" href="/css/gijgo.css">
+</head>
 <main>
-
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="/img/logo/Tihan-removebg-preview.png"  alt="">
+            </div>
+        </div>
+    </div>
+</div>
     <!-- slider Area Start-->
     <div class="slider-area ">
         <div class="slider-active">
@@ -774,17 +805,20 @@
                                     <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 95, 19)" fill-opacity="0" fill="rgb(0, 0, 0)"
                                     d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z"/>
                                     </svg>
-                                    <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim. Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjn.</p>
+                                    <p>The establishment of Technology Innovation Hubs(TIHs) is a crucial milestone for policy in research funding. TiHAN is a testament to the funding progress for academic projects: the advancement in the quality and the timeliness of the deliverables with the continuous engagement of eminent technical experts and senior administrators with the project Pls</p>
                                 </div>
                                 <!-- founder -->
                                 <div class="testimonial-founder d-flex align-items-center">
                                    <div class="founder-text">
-                                        <span>Jessya Inn</span>
-                                        <p>Co Founder</p>
+                                        <span> Dr. Balaji Raman, Associate Professor,</span>
+                                        <p>Associate Dean (Industry Engagement), Chairman Placements</p>
+                                        <p>Indian Institute of Information Technology Sri City</p>
                                    </div>
                                 </div>
                             </div>
                         </div>
+
+
                         <!-- Single Testimonial -->
                         <div class="single-testimonial">
                              <!-- Testimonial Content -->
@@ -795,13 +829,13 @@
                                     <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 95, 19)" fill-opacity="0" fill="rgb(0, 0, 0)"
                                     d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z"/>
                                     </svg>
-                                    <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim. Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjn.</p>
+                                    <p>"Outstanding support by TiHAN, IIT Hyderabad team. Excellent presentation by Dr.GVV Sharma sir and outstanding demonstration by team members." <br> It's a good opportunity to experience a live workshop. </p>
                                 </div>
                                 <!-- founder -->
                                 <div class="testimonial-founder d-flex align-items-center">
                                    <div class="founder-text">
-                                        <span>Jessya Inn</span>
-                                        <p>Co Founder</p>
+                                        <span>Skill Development Program Workshop on UAV & UGV</span>
+                                        <!-- <p>Co Founder</p> -->
                                    </div>
                                 </div>
                             </div>

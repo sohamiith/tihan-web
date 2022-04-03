@@ -3,10 +3,42 @@
 
 <!doctype html>
 <html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TiHAN-IIT Hyderabad</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" type="image/x-icon" href="/img/logo/logo vector white-02.png">
+
+	<!-- CSS here -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/slicknav.css">
+        <link rel="stylesheet" href="/css/animate.min.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/css/themify-icons.css">
+        <link rel="stylesheet" href="/css/slick.css">
+        <link rel="stylesheet" href="/css/nice-select.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <link rel="stylesheet" href="/css/gijgo.css">
+</head>
    <body>
     
     <main>
-
+    <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="/img/logo/Tihan-removebg-preview.png"  alt="">
+            </div>
+        </div>
+    </div>
+</div>
         <div class="services-details-area">
             <div class="container">
                 <div class="row">
@@ -21,25 +53,29 @@
                             
 <div class="whole-wrap">
 		<div class="container box_1170">
+        @foreach($presss as $press)
 			<div class="section-top-border">
-				<h3 class="mb-30"><a href="https://drive.google.com/file/d/1V2XGKVQhIrCR6gGnwdNOO1ayESOe6uSG/view">TiHAN Foundation, IIT Hyderabad Logo, Brochure & Skill Development Kits launched</a></h3>
+            
+				<h3 class="mb-30"><a href="{{$press->document}}">{{$press->title}}</a></h3>
 				<div class="row">
 					<div class="col-md-3">
 						<img src="/img/elements/tihan-press.jpeg" alt="" class="img-fluid">
 					</div>
 					<div class="col-md-9 mt-sm-20">
-						<p>January 24, 2022<br>
-                            <br><br>TiHAN has made significant progress since its inception and the development of a testbed which is the first of its kind by an institute in India is a testimony to its technological capabilities, Prof Murty.</p>
+						<p>{{$press->release_date}}<br>
+                            <br><br>{{$press->description}}</p>
                             
                             <div class="header-info-right">
                                 <!-- <ul class="header-social">     -->
-                                    <a href="https://twitter.com/IitTihan/status/1487377966514401282?s=20&t=zSR_-mYXf7eKVurF2xFwbw"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
-                                    <a href="https://www.instagram.com/p/CZT6YhxsRtM/?utm_source=ig_web_copy_link"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
-                                    <a href="https://www.facebook.com/tihaniith"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;
-                                    <a href=https://www.linkedin.com/feed/update/urn:li:activity:6893144600220180480"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;
+                                    <a href="{{$press->tw_link}}"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+                                    <a href="{{$press->insta_link}}"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+                                    <a href="{{$press->fb_link}}"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;
+                                    <a href="{{$press->ld_link}}"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;
                             </div>
                         </div>
+                        
 				</div>
+                @endforeach
 			</div>
 
 

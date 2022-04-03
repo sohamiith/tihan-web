@@ -4,12 +4,45 @@
 <html class="no-js" lang="zxx">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TiHAN-IIT Hyderabad</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" type="image/x-icon" href="/img/logo/logo vector white-02.png">
+
+	<!-- CSS here -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/slicknav.css">
+        <link rel="stylesheet" href="/css/animate.min.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/css/themify-icons.css">
+        <link rel="stylesheet" href="/css/slick.css">
+        <link rel="stylesheet" href="/css/nice-select.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <link rel="stylesheet" href="/css/gijgo.css">
+
 </head>
    <body>
     <main>
+    <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="/img/logo/Tihan-removebg-preview.png"  alt="">
+            </div>
+        </div>
+    </div>
+</div>
         <!-- slider Area Start-->
         <div class="slider-area ">
-            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="/img/hero/ind_collab.png">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="/img/hero/14.png">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -41,7 +74,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/director_murty-4.jpg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://mme.iitm.ac.in/murty/bsmurty">
                            <h2><b>Prof. B. S. Murty</b></h2>
                         </a>
                         <p><h4>Director, IIT Hyderabad <br>  Chairman of the Hub</h4></p>
@@ -56,7 +89,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/raji-2.jpg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://www.iith.ac.in/~raji/">
                            <h2><b>Prof. P. Rajalakshmi</b></h2>
                         </a>
                         <p><h4>Dept. of Electrical Engineering, IIT Hyderabad <br>  Member-Secretary of the Hub</h4></p>
@@ -72,7 +105,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/kuchiphoto.webp" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://iith.ac.in/ee/kkuchi/">
                            <h2><b> Prof. Kiran K Kuchi </b></h2>
                         </a>
                         <p><h4>Dean R&D, IIT Hyderabad <br> Member of the Hub</h4></p>
@@ -84,7 +117,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/Suryakumar_S.jpg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://sites.google.com/mae.iith.ac.in/ssurya">
                            <h2><b>Prof. S. Surya Kumar</b></h2>
                         </a>
                         <p><h4>Faculty Incharge Entrepreneurship, IIT Hyderabad <br> Member of the Hub</h4></p>
@@ -96,7 +129,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/arjun2.jpg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://www.iith.ac.in/~tbr/">
                            <h2><b>Dr. Bheemarjuna Reddy Tamma</b></h2>
                         </a>
                         <p><h4>Professor, Dept. of CSE, IIT Hyderabad <br> Member of the Hub</h4></p>
@@ -113,7 +146,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/gopi.jpeg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://www.bloomberg.com/profile/person/18801586">
                            <h2><b> Dr. Gopichand Katragadda </b></h2>
                         </a>
                         <p><h4>Founder & CEO, Myelin Foundry <br> Member of the Hub</h4></p>
@@ -125,7 +158,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/siva.jpg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://www.crunchbase.com/person/kumar-n-sivarajan">
                            <h2><b>Dr. Kumar N. Sivarajan</b></h2>
                         </a>
                         <p><h4>CTO, Tejas Networks <br> Member of the Hub</h4></p>
@@ -137,7 +170,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/krishna-327x263px-1.jpg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://www.cyient.com/senior-leadership/krishna-bodanapu">
                            <h2><b>Mr. Krishna Bodanapu</b></h2>
                         </a>
                         <p><h4>MD & CEO, CYIENT <br> Member of the Hub</h4></p>
@@ -149,7 +182,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/samir.png" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://inventuscap.com/team/samir-kumar/">
                            <h2><b>Mr. Samir Kumar</b></h2>
                         </a>
                         <p><h4>Inventus (India) Advisors <br> Member of the Hub</h4></p>
@@ -165,7 +198,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/krmuralimohan-3.jpg" alt="">
                      <div class="media-body">
-                        <a href="#">
+                        <a href="https://dst.gov.in/whoswho/dr-k-r-murali-mohan">
                            <h2><b>Dr. K. R. Murali Mohan</b></h2>
                         </a>
                         <p><h4>Mission Director, NM-ICPS, Dept. of Science & Technology, Govt. of India <br> Member of the Hub</h4></p>

@@ -16,7 +16,7 @@ class PresssController extends Controller
     public function indexPress(Request $request)
     {
         $press = $this->listPress($request);
-        return view('office-press',['presss'=>$press]); 
+        return view('new-press-release',['presss'=>$press]); 
     }
 
 	public function listPress(Request $request)
