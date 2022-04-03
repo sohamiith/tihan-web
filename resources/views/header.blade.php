@@ -100,7 +100,7 @@
                                             <ul class="submenu">
                                             <li><a href="/press-releases">Press Releases</a></li>
                                             <li><a href="/events">Event</a></li>
-                                            <li><a href="services_details.html">Gallery</a></li>  
+                                            <li><a href="/gallery">Gallery</a></li>  
                                             </ul>
                                         </li>
                                         <li><a href="#">Careers</a>

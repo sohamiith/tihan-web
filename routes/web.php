@@ -100,11 +100,13 @@ Route::get("/internship", [InternshipsController::class,'indexInternships']);
 
 Route::get('/careers',[JobsController::class,'indexJobs'] );
 
-Route::get('/press-releases', function () {
-    return view('new-press-release');
-});
+Route::get('/press-releases',[PresssController::class,'indexPress'] );
 Route::get('/events', function () {
     return view('events');
+});
+
+Route::get('/gallery', function () {
+    return view('gallery');
 });
 /* 
 	Admin panel routes
