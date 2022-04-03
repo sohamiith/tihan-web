@@ -21,7 +21,14 @@ alter table students add column phone varchar(15) default null;
 alter table students add column institute varchar(255) default null;
 alter table students add column updated_at timestamp default null;
 alter table students add column created_at timestamp default null;
-
+alter table students add photo_url varchar(255) default null after photo;
+alter table students add aadhar varchar(255) default null after photo_url;
+alter table students add aadhar_url varchar(255) default null after aadhar;
+alter table students add pan varchar(255) default null after aadhar_url;
+alter table students add pan_url varchar(255) default null after pan;
+alter table students add passbook varchar(255) default null after pan_url;
+alter table students add passbook_url varchar(255) default null after passbook;
+alter table students add batch varchar(15) default null after date_of_joining;
 
 create table interns (
 seq_no int PRIMARY KEY AUTO_INCREMENT,

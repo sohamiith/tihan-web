@@ -25,6 +25,13 @@ class Student extends Model
 		"stipend",
 		"profile_url",
 		"photo",
+		"photo_url",
+		"passbook_url",
+		"aadhar",
+		"aadhar_url",
+		"pan",
+		"pan_url",
+		"passbook",
 		"active",
 		"updated_at",
 		"created_at"
