@@ -19,6 +19,11 @@ class TendersController extends Controller
         return view('tender',['tenders'=>$tenders]); 
     }
 
+    public function ArchiveTenders(Request $request)
+    {
+        $tenders = $this->listTender($request);
+        return view('tender-archives',['tenders'=>$tenders]); 
+    }
     public function getTender($seq_no)
     {
         return Tender::where('seq_no',$seq_no)->get();

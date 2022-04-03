@@ -72,9 +72,7 @@ Route::get('/faculty-fellowship-program', function () {
 // });
 Route::get("/tender-invitations", [TendersController::class,'indexTenders']);
 
-Route::get('/archives-tender', function () {
-    return view('tender-archives');
-});
+Route::get('/archives-tender', [TendersController::class,'ArchiveTenders']);
 
 Route::get('/staff-details', function () {
     return view('team-executive');
