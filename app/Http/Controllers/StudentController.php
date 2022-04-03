@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Models\Student;
+use App\Models\User;
 class StudentController extends Controller
 {
     public function index(Request $request)
@@ -100,30 +102,47 @@ class StudentController extends Controller
 
     function saveStudents(Request $request)
     {
-    	/*
-			Run following commands for storage link
-
-			php artisan storage:link
-    		sudo chmod -R 777 public/uploads
-    		sudo chmod -R 777 storage
-    	*/
 		$count = Student::where('roll_no',$request->get('roll_no'))->count();
         if($count && empty($request->get('seq_no')))
         {
             return response()->json(['error' => 'Duplicate Roll No']);
         }
 
-    	$request->validate([
-          'file' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-        $path = null;
+        $path1 = null;
+        $path2 = null;
+        $path3 = null;
+        $path4 = null;
 
-        // Store image in storage/app/public/images
-        if ($request->file('photo')) 
+        if ($request->photo) 
         {
-            $imagePath = $request->file('photo');
+            $imagePath = $request->photo;
             $imageName = $imagePath->getClientOriginalName();
-            $path = $request->file('photo')->storeAs('images', $imageName, 'public');
+            $path1 = $request->file(key: 'photo')->store(path:'students', options:'s3');
+            Storage::disk('s3')->setVisibility($path1, visibility: 'public');
+        }
+
+        if ($request->pan) 
+        {
+            $imagePath = $request->pan;
+            $imageName = $imagePath->getClientOriginalName();
+            $path2 = $request->file(key: 'pan')->store(path:'students', options:'s3');
+            Storage::disk('s3')->setVisibility($path2, visibility: 'public');
+        }
+
+        if ($request->aadhar) 
+        {
+            $imagePath = $request->aadhar;
+            $imageName = $imagePath->getClientOriginalName();
+            $path3 = $request->file(key: 'aadhar')->store(path:'students', options:'s3');
+            Storage::disk('s3')->setVisibility($path3, visibility: 'public');
+        }
+
+        if ($request->passbook) 
+        {
+            $imagePath = $request->passbook;
+            $imageName = $imagePath->getClientOriginalName();
+            $path4 = $request->file(key: 'passbook')->store(path:'students', options:'s3');
+            Storage::disk('s3')->setVisibility($path4, visibility: 'public');
         }
         
         $data = [
@@ -137,12 +156,20 @@ class StudentController extends Controller
         	"first_guide" => $request->get('first_guide'),
         	"second_guide" => $request->get('second_guide'),
         	"date_of_joining" => $request->get('date_of_joining'),
+            "batch" => !empty($request->get('date_of_joining')) ? date('Y', strtotime($request->get('date_of_joining'))) : null,
         	"research_domain" => $request->get('research'),
         	"project_title" => $request->get('project_title'),
         	"tenure" => $request->get('tenure'),
         	"stipend" => $request->get('stipend'),
             "profile_url" => $request->get('profile_id'),
-            "photo" => $path,
+            "photo" => $path1 ? basename($path1) : $path1,
+            "photo_url" => $path1 ? Storage::disk(name:'s3')->url($path1) : $path1,
+            "pan" => $path2 ? basename($path2) : $path2,
+            "pan_url" => $path2 ? Storage::disk(name:'s3')->url($path2) : $path2,
+            "aadhar" => $path3 ? basename($path3) : $path3,
+            "aadhar_url" => $path3 ? Storage::disk(name:'s3')->url($path3) : $path3,
+            "passbook" => $path4 ? basename($path4) : $path4,
+            "passbook_url" => $path4 ? Storage::disk(name:'s3')->url($path4) : $path4,
             "updated_at" => date("Y-m-d h:i:s"),
             "created_at" => $request->get('created_at') ?? date("Y-m-d h:i:s"),
         ];
@@ -152,22 +179,90 @@ class StudentController extends Controller
         if($seq_no = $request->get('seq_no'))
     	{
     		$old = Student::where('seq_no',$seq_no)->get();
-    		if(!empty($old[0]['photo']) && $old[0]['photo'] != $path)
+    		if(!empty($old[0]['photo']) && !empty($path1))
     		{
-    			if(file_exists(public_path($old[0]['photo'])))
-    			{
-					unlink(public_path($old[0]['photo']));
-				}
+    			Storage::disk('s3')->delete('students/'.$old[0]['photo']);
     		}
-    		$student->where('seq_no',$seq_no)->update($data);
+            if(!empty($old[0]['pan']) && !empty($path2))
+            {
+                Storage::disk('s3')->delete('students/'.$old[0]['pan']);
+            }
+            if(!empty($old[0]['aadhar']) && !empty($path3))
+            {
+                Storage::disk('s3')->delete('students/'.$old[0]['aadhar']);
+            }
+            if(!empty($old[0]['passbook']) && !empty($path4))
+            {
+                Storage::disk('s3')->delete('students/'.$old[0]['passbook']);
+            }
+
+            if(!$path1)
+            {
+                $data['photo'] = $old[0]['photo'];
+                $data['photo_url'] = $old[0]['photo_url'];
+            }
+            if(!$path2)
+            {
+                $data['pan'] = $old[0]['pan'];
+                $data['pan_url'] = $old[0]['pan_url'];
+            }
+            if(!$path3)
+            {
+                $data['aadhar'] = $old[0]['aadhar'];
+                $data['aadhar_url'] = $old[0]['aadhar_url'];
+            }
+            if(!$path4)
+            {
+                $data['passbook'] = $old[0]['passbook'];
+                $data['passbook_url'] = $old[0]['passbook_url'];
+            }
+
+            $student->where('seq_no',$seq_no)->update($data);
     		$data['seq_no'] = $seq_no;
+            $data['user_id'] = $this->createUser(0, $request);
     	}
     	else
     	{
     		$student->save();
     		$data['seq_no'] = $student->id;
+            $data['user_id'] = $this->createUser(1, $request);
     	}
         return response()->json($data);
+    }
+
+    public function createUser($create, $request)
+    {
+        $data = [
+            "emp_id" => $request->get('roll_no'),
+            "email" => $request->get('email'),
+            "password" => null,
+            "user_type" => 1,
+            "social_id" => null,
+            "login_per" => $request->get('login_per') ?? 0,
+            "leave_apply" => $request->get('leave_apply') ?? 0,
+            "leave_managment" => $request->get('leave_managment') ?? 0,
+            "website_data" => $request->get('website_data') ?? 0,
+            "accounts" => $request->get('accounts') ?? 0,
+            "assets" => $request->get('assets') ?? 0,
+            "hr" => $request->get('hr') ?? 0,
+            "attendance" => $request->get('attendance') ?? 0,
+            "leave_balance" => 0,
+            "updated_at" => date("Y-m-d h:i:s"),
+            "created_at" => $request->get('created_at') ?? date("Y-m-d h:i:s"),
+        ];
+
+        //var_dump($data);exit();
+
+        $user = new User($data);
+
+        if($create)
+        {
+            $user->save();
+            return $user->id;
+        }
+
+        $user->where('emp_id',$request->get('roll_no'))->update($data);
+        return $user->id;
     }
 
     public function deleteStudent($seq_no)
