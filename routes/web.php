@@ -29,9 +29,8 @@ use App\Http\Controllers\LatesteventsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LatesteventsController::class,'indexEvents']);
+
 Route::get('/Tihan-Foundation', function () {
     return view('About-us-Foundation');
 });

@@ -16,7 +16,7 @@ class LatesteventsController extends Controller
     public function indexEvents(Request $request)
     {
         $events = $this->listEvents($request);
-        return view('office-latestevent',['events'=>$events]); 
+        return view('welcome',['events'=>$events]); 
     }
 
 	public function listEvents(Request $request)

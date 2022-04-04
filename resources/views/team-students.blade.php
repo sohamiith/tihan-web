@@ -101,7 +101,7 @@
                                         <div class="col-lg-3 col-md-3">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="{{url('/$student->photo')}}" alt="">
+                                                    <img src="{{$student->photo_url}}" alt="">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="#" class="plus-btn"><i class="ti-plus"></i></a>
