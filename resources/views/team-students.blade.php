@@ -68,14 +68,44 @@
                                 <!-- <span class="back-text">Gellary</span> -->
                             </div>
                         </div>
+                        <?php $program = app('request')->input('program'); ?>
                         <div class="col-lg-7">
                             <div class="properties__button">
                                 <!--Nav Button  -->                      
                                 <nav> 
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Post Graguate</a>
-                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Doctoral</a>
-                                        <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Post Doctoral</a>
+                                        <a 
+                                        <?php 
+                                            if($program == 'mtech'){
+                                                echo 'class="nav-item nav-link active"';
+                                            }
+                                            else{
+                                                echo 'class="nav-item nav-link"';
+                                            }
+                                        ?>
+                                        id="nav-profile-tab" data-toggle="tab" href="" role="tab" aria-controls="nav-profile" aria-selected="false"> Post Graguate</a>
+                                        <a 
+                                        <?php 
+                                            if($program == 'phd'){
+                                                echo 'class="nav-item nav-link active"';
+                                            }
+                                            else{
+                                                echo 'class="nav-item nav-link"';
+                                            }
+                                        ?>
+                                        id="nav-contact-tab" data-toggle="tab" href="#nav-home1" role="tab" aria-controls="nav-contact" aria-selected="false">Doctoral</a>
+                                        
+                                        <a 
+                                        <?php 
+                                            if($program == 'pdf'){
+                                                echo 'class="nav-item nav-link active"';
+                                            }
+                                            else{
+                                                echo 'class="nav-item nav-link"';
+                                            }
+                                        ?>
+                                        id="nav-last-tab" data-toggle="tab" href="/student-details?program=pdf" role="tab" aria-controls="nav-last" aria-selected="false">Post Doctoral</a>
+
                                     </div>
                                 </nav>
                                 <!--End Nav Button  -->
@@ -101,12 +131,12 @@
                                         <div class="col-lg-3 col-md-3">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="{{$student->photo_url}}" alt="">
+                                                    <img src="{{$student->photo_url}}" alt="" height="70%" width="50%">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="#" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h8><a href="#">{{$student->full_name}}</a></h8><br>
-                                                    <h8><a href="#">{{$student->roll_no}}@iith.ac.in</a></h8>
+                                                    <a href="{{$student->profile_url}}" target="_blank" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h8><a href="{{$student->profile_url}}" target="_blank">{{$student->full_name}}</a></h8><br>
+                                                    <h8><a href="{{$student->profile_url}}" target="_blank">{{$student->roll_no}}@iith.ac.in</a></h8>
                                                 </div>
                                             </div>
                                         </div>
