@@ -246,17 +246,17 @@
           </div>
           <div>
             <label class="row">
-              <span class="col">Leave Managmane Module</span>
+              <span class="col">Leave Management Module</span>
               <span class="col-auto">
                 <label class="form-check form-check-single form-switch">
-                  <input class="form-check-input" type="checkbox" name="leave_managment" id="leave_managment" value="1">
+                  <input class="form-check-input" type="checkbox" name="leave_management" id="leave_management" value="1">
                 </label>
               </span>
             </label>
           </div>
           <div>
             <label class="row">
-              <span class="col">HR Managmane Module</span>
+              <span class="col">HR Management Module</span>
               <span class="col-auto">
                 <label class="form-check form-check-single form-switch">
                   <input class="form-check-input" type="checkbox" name="hr" id="hr" value="1">
@@ -266,7 +266,7 @@
           </div>
           <div>
             <label class="row">
-              <span class="col">Assets Managmane Module</span>
+              <span class="col">Assets Management Module</span>
               <span class="col-auto">
                 <label class="form-check form-check-single form-switch">
                   <input class="form-check-input" type="checkbox" name="assets" id="assets" value="1">
@@ -276,7 +276,7 @@
           </div>
           <div>
             <label class="row">
-              <span class="col">Website Managmane Module</span>
+              <span class="col">Website Management Module</span>
               <span class="col-auto">
                 <label class="form-check form-check-single form-switch">
                   <input class="form-check-input" type="checkbox" name="website_date" id="website_data" value="1">
@@ -286,7 +286,7 @@
           </div>
           <div>
             <label class="row">
-              <span class="col">Accounts Managmane Module</span>
+              <span class="col">Accounts Management Module</span>
               <span class="col-auto">
                 <label class="form-check form-check-single form-switch">
                   <input class="form-check-input" type="checkbox" name="accounts" id="accounts" value="1">
@@ -335,7 +335,7 @@
     document.getElementById("seq_no").value = '';
     document.getElementById("active").value = '';
     document.getElementById("login_per").value = '';
-    document.getElementById("leave_managment").value = '';
+    document.getElementById("leave_management").value = '';
     document.getElementById("leave_apply").value = '';
     document.getElementById("hr").value = '';
     document.getElementById("accounts").value = '';
@@ -350,7 +350,7 @@
     document.getElementById("seq_no").value = '';
     document.getElementById("active").value = '';
     document.getElementById("login_per").value = '';
-    document.getElementById("leave_managment").value = '';
+    document.getElementById("leave_management").value = '';
     document.getElementById("leave_apply").value = '';
     document.getElementById("hr").value = '';
     document.getElementById("accounts").value = '';
@@ -414,7 +414,7 @@
         $("#login_per").val(res[0].login_per);
         $("#attendance").val(res[0].attendance);
         $("#leave_apply").val(res[0].leave_apply);
-        $("#leave_managment").val(res[0].leave_managment);
+        $("#leave_management").val(res[0].leave_management);
         $("#assets").val(res[0].assets);
         $("#accounts").val(res[0].accounts);
     });
@@ -522,7 +522,7 @@
       document.getElementById("seq_no").value = '';
       document.getElementById("active").value = '';
       document.getElementById("login_per").value = '';
-      document.getElementById("leave_managment").value = '';
+      document.getElementById("leave_management").value = '';
       document.getElementById("leave_apply").value = '';
       document.getElementById("hr").value = '';
       document.getElementById("accounts").value = '';

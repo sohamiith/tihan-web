@@ -24,7 +24,7 @@ class StudentController extends Controller
     public function listStudentsByGroup($program)
     {
         $query = Student::query();
-        $query->select('roll_no','full_name','program','project_title','photo','profile_url');
+        $query->select('roll_no','full_name','program','project_title','photo','profile_url','photo_url');
         $query->where('active', 1);
         switch ($program)
         {
@@ -41,8 +41,6 @@ class StudentController extends Controller
 
         $query->orderBy('date_of_joining', 'DESC');
         $students = $query->get();
-
-        //var_dump($students[0]['full_name']);exit();
 
         return $students;
     }
@@ -267,7 +265,9 @@ class StudentController extends Controller
 
     public function deleteStudent($seq_no)
     {
+        $student = Student::where('seq_no',$seq_no)->get();
         Student::where('seq_no',$seq_no)->delete();
+        User::where('emp_id',$student[0]->roll_no)->delete();
         return response()->json('Deleted Successfully');
     }
 }
