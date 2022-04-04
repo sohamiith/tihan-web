@@ -42,16 +42,16 @@
 </div>
         <!-- slider Area Start-->
         <div class="slider-area ">
-            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="/img/hero/R&D.png">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="/img/hero/19.png">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap pt-100">
-                                <h2>TiHAN Industry Collaborations</h2>
+                                <h2>Gallery</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">R & D</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Industry Collaborations</a></li> 
+                                    <li class="breadcrumb-item"><a href="#">News</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Gallery</a></li> 
                                     </ol>
                                 </nav>
                             </div>
