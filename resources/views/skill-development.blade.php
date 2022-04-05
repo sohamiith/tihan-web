@@ -84,10 +84,10 @@ th, td {
                     <div class="col-12">
                         <div class="single-services section-padding2">
                             <div class="details-img mb-40">
-                            <blockquote class="generic-blockquote" style="text-align:center">
+                            <!-- <blockquote class="generic-blockquote" style="text-align:center">
                                 <h4>“ Autonomous System and Technologies ” by March 23rd to 25th March 2022</h4>
-                            </blockquote>    
-                            <img src="/img/gallery/c-dac-tihan-sdp.webp" alt="">
+                            </blockquote>     -->
+                            <img src="/img/gallery/1.webp" alt="">
                             </div>
                             <div class="details-caption" style="text-align:center">
                             <p >Registration Link: <b> <a href="https://t.ly/SRRt"> https://t.ly/SRRt</a></b></p>
