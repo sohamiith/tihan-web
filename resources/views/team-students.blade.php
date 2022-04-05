@@ -128,7 +128,7 @@
                                         {?>
                                             <div class="row">
                                         <?php }?>
-                                        <div class="col-lg-3 col-md-3">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
                                                     <img src="{{$student->photo_url}}" alt="" height="70%" width="50%">

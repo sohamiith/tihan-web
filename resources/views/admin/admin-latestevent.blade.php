@@ -69,7 +69,7 @@
 <div id="div_event" class="overlay">
   <div class="popup">
     <div class="modal-header">
-      <h2>Add Press Release</h2><br>
+      <h2>Add Latest Event</h2><br>
       <a class="close" href="#">&times;</a>
     </div>
     <div class="modal-body">
