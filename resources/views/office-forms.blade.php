@@ -36,7 +36,7 @@
                 <img src="/img/logo/Tihan-removebg-preview.png"  alt="">
             </div>
         </div>
-    </div>
+    </div>0
 </div>
         <!-- slider Area Start-->
         <div class="slider-area ">
