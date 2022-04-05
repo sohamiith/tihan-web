@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Illuminate\Support\Facades\Session;
 class UserController extends Controller
 {
     //
@@ -20,7 +21,7 @@ class UserController extends Controller
         else
         {
         	unset($user->password);
-            $req->session()->put('user',$user);
+            Session::put('user',$user);
             return redirect('/admin-dashboard');
         }
     }
