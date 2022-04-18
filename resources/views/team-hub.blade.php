@@ -74,7 +74,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/director_murty-4.jpg" alt="">
                      <div class="media-body">
-                        <a href="https://mme.iitm.ac.in/murty/bsmurty">
+                        <a href="https://mme.iitm.ac.in/murty/bsmurty"target="_blank">
                            <h2><b>Prof. B. S. Murty</b></h2>
                         </a>
                         <p><h4>Director, IIT Hyderabad <br>  Chairman of the Hub</h4></p>
@@ -89,7 +89,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/raji-2.jpg" alt="">
                      <div class="media-body">
-                        <a href="https://www.iith.ac.in/~raji/">
+                        <a href="https://www.iith.ac.in/~raji/"target="_blank">
                            <h2><b>Prof. P. Rajalakshmi</b></h2>
                         </a>
                         <p><h4>Dept. of Electrical Engineering, IIT Hyderabad <br>  Member-Secretary of the Hub</h4></p>
@@ -105,7 +105,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/kuchiphoto.webp" alt="">
                      <div class="media-body">
-                        <a href="https://iith.ac.in/ee/kkuchi/">
+                        <a href="https://iith.ac.in/ee/kkuchi/"target="_blank">
                            <h2><b> Prof. Kiran K Kuchi </b></h2>
                         </a>
                         <p><h4>Dean R&D, IIT Hyderabad <br> Member of the Hub</h4></p>
@@ -117,7 +117,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/Suryakumar_S.jpg" alt="">
                      <div class="media-body">
-                        <a href="https://sites.google.com/mae.iith.ac.in/ssurya">
+                        <a href="https://sites.google.com/mae.iith.ac.in/ssurya"target="_blank">
                            <h2><b>Prof. S. Surya Kumar</b></h2>
                         </a>
                         <p><h4>Faculty Incharge Entrepreneurship, IIT Hyderabad <br> Member of the Hub</h4></p>
@@ -129,7 +129,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/arjun2.jpg" alt="">
                      <div class="media-body">
-                        <a href="https://www.iith.ac.in/~tbr/">
+                        <a href="https://www.iith.ac.in/~tbr/"target="_blank">
                            <h2><b>Dr. Bheemarjuna Reddy Tamma</b></h2>
                         </a>
                         <p><h4>Professor, Dept. of CSE, IIT Hyderabad <br> Member of the Hub</h4></p>
@@ -146,7 +146,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/gopi.jpeg" alt="">
                      <div class="media-body">
-                        <a href="https://www.bloomberg.com/profile/person/18801586">
+                        <a href="https://www.bloomberg.com/profile/person/18801586"target="_blank">
                            <h2><b> Dr. Gopichand Katragadda </b></h2>
                         </a>
                         <p><h4>Founder & CEO, Myelin Foundry <br> Member of the Hub</h4></p>
@@ -158,7 +158,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/siva.jpg" alt="">
                      <div class="media-body">
-                        <a href="https://www.crunchbase.com/person/kumar-n-sivarajan">
+                        <a href="https://www.crunchbase.com/person/kumar-n-sivarajan"target="_blank">
                            <h2><b>Dr. Kumar N. Sivarajan</b></h2>
                         </a>
                         <p><h4>CTO, Tejas Networks <br> Member of the Hub</h4></p>
@@ -170,7 +170,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/krishna-327x263px-1.jpg" alt="">
                      <div class="media-body">
-                        <a href="https://www.cyient.com/senior-leadership/krishna-bodanapu">
+                        <a href="https://www.cyient.com/senior-leadership/krishna-bodanapu"target="_blank">
                            <h2><b>Mr. Krishna Bodanapu</b></h2>
                         </a>
                         <p><h4>MD & CEO, CYIENT <br> Member of the Hub</h4></p>
@@ -182,7 +182,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/samir.png" alt="">
                      <div class="media-body">
-                        <a href="https://inventuscap.com/team/samir-kumar/">
+                        <a href="https://inventuscap.com/team/samir-kumar/" target="_blank">
                            <h2><b>Mr. Samir Kumar</b></h2>
                         </a>
                         <p><h4>Inventus (India) Advisors <br> Member of the Hub</h4></p>
@@ -198,7 +198,7 @@
                   <div class="media align-items-center">
                      <img src="/img/david/krmuralimohan-3.jpg" alt="">
                      <div class="media-body">
-                        <a href="https://dst.gov.in/whoswho/dr-k-r-murali-mohan">
+                        <a href="https://dst.gov.in/whoswho/dr-k-r-murali-mohan" target="_blank">
                            <h2><b>Dr. K. R. Murali Mohan</b></h2>
                         </a>
                         <p><h4>Mission Director, NM-ICPS, Dept. of Science & Technology, Govt. of India <br> Member of the Hub</h4></p>

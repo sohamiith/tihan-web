@@ -142,7 +142,7 @@
                                             <!-- Wrapper for slides -->
                                             <div class="carousel-inner">
                                             <div class="item active">
-                                                <img src="/img/gallery/women_day/1.mp4"  style="width:100%;">
+                                                <img src="/img/gallery/women_day/1.gif"  style="width:100%;">
                                             </div>
 
                                             <div class="item">
