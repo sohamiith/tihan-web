@@ -100,8 +100,8 @@ th, td {
                         @if($tender->end_date >= date('Y-m-d'))
                         <tr id="row_tenders_{{ $tender->seq_no}}">
                             <?php 
-                            $start_date = date("d-m-Y", strtotime($tender->start_date));
-                            $end_date = date("d-m-Y", strtotime($tender->end_date));
+                            $start_date = date("d/m/Y", strtotime($tender->start_date));
+                            $end_date = date("d/m/Y", strtotime($tender->end_date));
                             ?>
                             <td>{{$start_date}}</td>
                             <td>{{$tender->description}}</td>

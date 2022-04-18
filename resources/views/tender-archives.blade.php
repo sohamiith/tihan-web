@@ -78,11 +78,15 @@ th, td {
                         </thead>
                         @foreach($tenders as $tender)
                         @if($tender->end_date <= date('Y-m-d'))
+                        <?php 
+                            $start_date = date("d/m/Y", strtotime($tender->start_date));
+                            $end_date = date("d/m/Y", strtotime($tender->end_date));
+                        ?>
                         <tr id="row_tenders_{{ $tender->seq_no}}">
-                            <td>{{$tender->start_date}}</td>
+                            <td>{{$start_date}}</td>
                             <td>{{$tender->description}}</td>
                             <td> <a href="{{$tender->document}}"> Tender File </a></td>
-                            <td>{{$tender->end_date}}</td>
+                            <td>{{$end_date}}</td>
                             </tr>
                         @endif
                         @endforeach
