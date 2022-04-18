@@ -82,8 +82,8 @@ class TendersController extends Controller
     		$data['seq_no'] = $seq_no;
     	}
     	else
+        $tender->save();
     	{
-    		$tender->save();
             $data['seq_no'] = $tender->id;
     	}
 

@@ -94,8 +94,8 @@
           <input type="text" class = "form-control" id="intern_no" name="intern_no" placeholder="Internship ID" required><br>
         </div>
         <div class="col-md-3 col-xl-6">
-          <label class="form-label required">Contact No:</label>
-          <input type="text" class = "form-control" id="phone" name="phone" placeholder="Phone No" required><br>
+          <label class="form-label ">Contact No:</label>
+          <input type="text" class = "form-control" id="phone" name="phone" placeholder="Phone No" ><br>
         </div>
       </div>
 
@@ -108,8 +108,8 @@
 
       <div class="row">
         <div class="col-md-6 col-xl-12">
-          <label class="form-label required">Email ID:</label>
-          <input type="text" class = "form-control" id="email" name="email" placeholder="Email ID" required><br>
+          <label class="form-label ">Email ID:</label>
+          <input type="text" class = "form-control" id="email" name="email" placeholder="Email ID" ><br>
         </div>
       </div>
 
@@ -171,8 +171,8 @@
           <input type="text" class = "form-control" id="tenure" name="tenure" placeholder="Tenure (In Months)" required><br>
         </div>
         <div class="col-md-3 col-xl-6">
-          <label class="form-label required">Stipend (Per Month):</label>
-          <input type="text" class = "form-control" id="stipend" name="stipend" placeholder="Stipend (Per Month)" required><br>
+          <label class="form-label ">Stipend (Per Month):</label>
+          <input type="text" class = "form-control" id="stipend" name="stipend" placeholder="Stipend (Per Month)" ><br>
         </div>
       </div>
         

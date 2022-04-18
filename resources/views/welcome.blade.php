@@ -322,7 +322,7 @@
                             <div class="front-text">
                                 <h2 class="">Our Projects</h2>
                             </div>
-                            <span class="back-text">Gallary</span>
+                            <span class="back-text">Gallery</span>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -345,11 +345,10 @@
                                             <div class="project-img">
                                                 <img src="/img/gallery/slide6-1.webp" alt="">
                                             </div>
-                                            <div class="project-cap">
+                                            <!-- <div class="project-cap">
                                                 <a href="/img/gallery/slide6-1.webp" class="plus-btn"><i class="ti-plus"></i></a>
-                                                <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                <h4><a href="project_details.html">Factory</a></h4> -->
-                                            </div>
+                                                
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
@@ -357,11 +356,10 @@
                                             <div class="project-img">
                                                 <img src="/img/gallery/slide5-1.webp" alt="">
                                             </div>
-                                            <div class="project-cap">
+                                            <!-- <div class="project-cap">
                                                 <a href="" class="plus-btn"><i class="ti-plus"></i></a>
-                                               <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                <h4><a href="project_details.html">Factory</a></h4> -->
-                                            </div>
+                                               
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
@@ -369,11 +367,10 @@
                                             <div class="project-img">
                                                 <img src="/img/gallery/slide4-1.webp" alt="">
                                             </div>
-                                            <div class="project-cap">
+                                            <!-- <div class="project-cap">
                                                 <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                               <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                <h4><a href="project_details.html">Factory</a></h4> -->
-                                            </div>
+                                               
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
@@ -381,11 +378,9 @@
                                             <div class="project-img">
                                                 <img src="/img/gallery/slide3-1.webp" alt="">
                                             </div>
-                                            <div class="project-cap">
+                                            <!-- <div class="project-cap">
                                                 <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                               <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                <h4><a href="project_details.html">Factory</a></h4> -->
-                                            </div>
+                                                                                           </div> -->
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
@@ -393,11 +388,7 @@
                                             <div class="project-img">
                                                 <img src="/img/gallery/slide2-3.webp" alt="">
                                             </div>
-                                            <div class="project-cap">
-                                                <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                               <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                <h4><a href="project_details.html">Factory</a></h4> -->
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
@@ -405,11 +396,7 @@
                                             <div class="project-img">
                                                 <img src="/img/gallery/slide1-3.webp" alt="">
                                             </div>
-                                            <div class="project-cap">
-                                                <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                               <!-- <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                <h4><a href="project_details.html">Factory</a></h4> -->
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
