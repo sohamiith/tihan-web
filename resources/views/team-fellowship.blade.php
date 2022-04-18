@@ -69,7 +69,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">01</div>
-							<div class="country"> <img src="/img/elements/sridevi.png" alt="flag" style="width:20%;">Dr. sridevi</div>
+							<div class="country"> <img src="/img/elements/sridevi.png" alt="flag" style="width:20%;"><a href="https://www.nitt.edu/home/academics/departments/cse/faculty/sridevi/" target="_blank">Dr. sridevi</a></div>
 							<div class="visit">National institute of Technology, Tiruchirappalli</div>
 							<div class="visit">Computer Science and Engineering</div>
 							<!-- <div class="percentage">
@@ -81,7 +81,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">02</div>
-							<div class="country"> <img src="/img/elements/abhinavkumar.jpg" alt="flag" style="width:20%;">Dr. Abhinav Kumar</div>
+							<div class="country"> <img src="/img/elements/abhinavkumar.jpg" alt="flag" style="width:20%;"><a href="https://www.iith.ac.in/~abhinavkumar/" target="_blank">Dr. Abhinav Kumar</a></div>
 							<div class="visit">Indian Institute of Technology, Hyderabad</div>
                             <div class="visit">Electrical Engineering</div>
 							<!-- <div class="percentage">
@@ -93,7 +93,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">03</div>
-							<div class="country"> <img src="/img/elements/kondepu.jpeg " style="width:20%;" alt="flag">Dr. Koteswararao Kondepu</div>
+							<div class="country"> <img src="/img/elements/kondepu.jpeg " style="width:20%;" alt="flag"><a href="https://scholar.google.com/citations?user=X-yZFQkAAAAJ&hl=en" target="_blank">Dr. Koteswararao Kondepu</a></div>
 							<div class="visit">Indian Institute of Technology, Hyderabad</div>
                             <div class="visit">Computer Science and Engineering</div>
 
@@ -106,19 +106,19 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">04</div>
-							<div class="country"> <img src="/img/elements/dsp-e1638770609713.png "style="width:20%;" alt="flag">Dr. Digvijay S. Pawar</div>
+							<div class="country"> <img src="/img/elements/dsp-e1638770609713.png "style="width:20%;" alt="flag"><a href="https://www.iith.ac.in/~dspawar/" target="_blank">Dr. Digvijay S. Pawar</a></div>
 							<div class="visit">Indian Institute of Technology, Hyderabad</div>
                             <div class="visit">Civil Engineering</div>							
 						</div>
 						<div class="table-row">
 							<div class="serial">05</div>
-							<div class="country"> <img src="/img/elements/sai.jpg" style="width:20%;" alt="flag">Dr. M P R Sai Kiran</div>
+							<div class="country"> <img src="/img/elements/sai.jpg" style="width:20%;" alt="flag"><a href="https://iitj.irins.org/profile/213446" target="_blank">Dr. M P R Sai Kiran</a></div>
 							<div class="visit">Indian Institute of Technology, Jodhpur</div>
                             <div class="visit">Electrical Engineering</div>							
 						</div>
 						<div class="table-row">
 							<div class="serial">06</div>
-							<div class="country"> <img src="/img/elements/praveen.jpg" style="width:20%;" alt="flag"><br>Dr. Praveen Tammana	</div>
+							<div class="country"> <img src="/img/elements/praveen.jpg" style="width:20%;" alt="flag"><a href="https://ptammana.wordpress.com/" target="_blank">Dr. Praveen Tammana</a>	</div>
 							<div class="visit">Indian Institute of Technology, Hyderabad</div>
                             <div class="visit">Computer Science and Engineering</div>
 							

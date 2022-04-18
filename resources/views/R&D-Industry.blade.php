@@ -73,25 +73,25 @@
                             
                             <div class="row gallery-item">
                                     <div class="col-md-3">
-                                        <a href="/img/elements/1.png" class="img-pop-up">
+                                        <a href="https://www.globalsuzuki.com/" target="_blank" >
                                     <div class="single-gallery-image" style="background: url(/img/elements/1.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/2.png" class="img-pop-up">
+                                        <a href="https://www.nvidia.com/en-in/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/2.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/3.png" class="img-pop-up">
+                                        <a href="https://www.marutisuzuki.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/3.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/4.png" class="img-pop-up">
+                                        <a href="https://capgemini-engineering.com/in/en/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/4.png);"></div>
                                         </a>
                                     </div>
@@ -99,25 +99,25 @@
 
                             <div class="row gallery-item">
                                     <div class="col-md-3">
-                                        <a href="/img/elements/5.png" class="img-pop-up">
+                                        <a href="https://www.cyient.com/" target="_blank">
                                     <div class="single-gallery-image" style="background: url(/img/elements/5.png);"></div>
                                         </a>
                                         </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/6.png" class="img-pop-up">
+                                        <a href="https://www.anratechnologies.com/home/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/6.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/7.png" class="img-pop-up">
+                                        <a href="https://www.araiindia.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/7.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/8.jpg" class="img-pop-up">
+                                        <a href="https://www.honeywell.com/us/en" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/8-1.png); ">
                                         <!-- <img class="single-gallery-image" src="/img/elements/8.jpg" width=100%> -->
                                         </div>
@@ -129,25 +129,25 @@
 
                             <div class="row gallery-item">
                                     <div class="col-md-3">
-                                        <a href="/img/elements/9.png" class="img-pop-up">
+                                        <a href="https://www.continental.com/en/" target="_blank">
                                     <div class="single-gallery-image" style="background: url(/img/elements/9.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/10.png" class="img-pop-up">
+                                        <a href="https://mitrarobot.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/10.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/11.jpg" class="img-pop-up">
+                                        <a href="https://itic.iith.ac.in/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/11.jpg);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/12.png" class="img-pop-up">
+                                        <a href="https://www.tcs.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/12.png);"></div>
                                         </a>
                                     </div>
@@ -157,25 +157,25 @@
 
                             <div class="row gallery-item">
                                     <div class="col-md-3">
-                                        <a href="/img/elements/13.png" class="img-pop-up">
+                                        <a href="" target="_blank">
                                     <div class="single-gallery-image" style="background: url(/img/elements/13.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/14.png" class="img-pop-up">
+                                        <a href="https://www.springml.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/14.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/15.png" class="img-pop-up">
+                                        <a href="https://www.vehant.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/15.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/16.png" class="img-pop-up">
+                                        <a href="https://sandhaanlabs.in/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/16.png);"></div>
                                         </a>
                                     </div>
@@ -184,25 +184,25 @@
 
                             <div class="row gallery-item">
                                     <div class="col-md-3">
-                                        <a href="/img/elements/17.png" class="img-pop-up">
+                                        <a href="https://www.indiannavy.nic.in/?" target="_blank"">
                                     <div class="single-gallery-image" style="background: url(/img/elements/17.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/18.png" class="img-pop-up">
+                                        <a href="https://www.marutdrones.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/18-2.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/19.png" class="img-pop-up">
+                                        <a href="https://sipil.in/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/19.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/20.png" class="img-pop-up">
+                                        <a href="https://www.optimuslogic.in/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/20.png);"></div>
                                         </a>
                                     </div>
@@ -211,25 +211,25 @@
 
                             <div class="row gallery-item">
                                     <div class="col-md-3">
-                                        <a href="/img/elements/21.png" class="img-pop-up">
+                                        <a href="https://www.robotspace.in/" target="_blank">
                                     <div class="single-gallery-image" style="background: url(/img/elements/21.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/22.png" class="img-pop-up">
+                                        <a href="https://www.itspe.co.in/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/22.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/23.png" class="img-pop-up">
+                                        <a href="http://transvahan.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/23-1.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/24.png" class="img-pop-up">
+                                        <a href="https://steradiansemi.com/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/24.png);"></div>
                                         </a>
                                     </div>
@@ -238,31 +238,31 @@
 
                             <div class="row gallery-item">
                                     <div class="col-md-3">
-                                        <a href="/img/elements/25.png" class="img-pop-up">
+                                        <a href="" target="_blank">
                                     <div class="single-gallery-image" style="background: url(/img/elements/25.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/26.jpg" class="img-pop-up">
+                                        <a href="" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/26.jpg);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/27.jpg" class="img-pop-up">
+                                        <a href="" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/27.jpg);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/28.png" class="img-pop-up">
+                                        <a href="" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/28-1.png);"></div>
                                         </a>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <a href="/img/elements/29.png" class="img-pop-up">
+                                        <a href="https://www.infineon.com/cms/singapore/en/" target="_blank">
                                             <div class="single-gallery-image" style="background: url(/img/elements/29.png);"></div>
                                         </a>
                                     </div>

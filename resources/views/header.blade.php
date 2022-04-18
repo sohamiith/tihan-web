@@ -64,13 +64,13 @@
                                                 <li><a href="/img/logo.pdf">TiHAN logo</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="about.html">R & D</a>
+                                        <li><a href="/R&D">R & D</a>
                                             <ul class="submenu">
                                                 <li><a href="/industry">Research Collabration</a></li>
                                                 <li><a href="/academia">Academic Collabration</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="project.html">Team</a>
+                                        <li><a>Team</a>
                                             <ul class="submenu">
                                                 <li><a href="/members-of-the-hub-governing-board">Hub Govering Body</a></li>
                                                 <li><a href="/faculty-hub">Faculty of Hub</a></li>
@@ -79,7 +79,7 @@
                                                 <li><a href="/faculty-fellowship-program">Faculty Fellowship</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="services.html">Testbed</a>
+                                        <li><a >Testbed</a>
                                             <ul class="submenu">
                                                 <li><a href="/testbed">About Testbed</a></li>
                                                 <li><a href="/foundation_stone">Foundation Stone Laying Ceremony</a></li>
@@ -87,7 +87,7 @@
                                         </li>
                                         <li><a href="/tender-invitations">Tenders</a>
                                         </li>
-                                        <li><a href="#">Activity</a>
+                                        <li><a >Activity</a>
                                             <ul class="submenu">
                                                 <li><a href="/skill-development-programs-workshops">Skill Development</a></li>
                                                 <li><a href="/industry-lecture-series">Lecture Series</a></li>
@@ -96,14 +96,14 @@
                                                 <li><a href="/skill-development-proposal">Skill Development Call for Proposal</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">News</a>
+                                        <li><a >News</a>
                                             <ul class="submenu">
                                             <li><a href="/press-releases">Press Releases</a></li>
                                             <li><a href="/events">Event</a></li>
                                             <li><a href="/gallery">Gallery</a></li>  
                                             </ul>
                                         </li>
-                                        <li><a href="#">Careers</a>
+                                        <li><a >Careers</a>
                                             <ul class="submenu">
                                             <li><a href="/careers">Opportunites </a></li>
                                             <li><a href="/internship">Internships</a></li>

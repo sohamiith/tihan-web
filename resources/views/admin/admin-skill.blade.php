@@ -90,8 +90,8 @@
           <input type="date" class = "form-control" id="start_date" name="start_date" class="form-control mb-2" required><br>
         </div>
         <div class="col-md-3 col-xl-6">
-          <label class="form-label required">End Date:</label>
-          <input type="date" class = "form-control" id="end_date" name="end_date" class="form-control mb-2" required><br>
+          <label class="form-label">End Date:</label>
+          <input type="date" class = "form-control" id="end_date" name="end_date" class="form-control mb-2" ><br>
         </div>
       </div>
       <div class="row">

@@ -161,6 +161,130 @@ th, td {
                                 <td>Electrical Engineering</td>
                             </tr>
 
+
+
+
+                            <tr>
+                                <td><a href="#"><b>Dr. M V Panduranga Rao</b></a></td>
+                                <td>Computer Science Engineering</td>
+
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Mahesh M S</b></td>
+                                <td>Mechanical & Aerospace Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Manish Singh</b></td>
+                                <td>Computer Science Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Maunendra Desarkar</b></td>
+                                <td>Computer Science Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Mohammed Zafar Ali Khan</b></td>
+                                <td>Electrical Engineering
+</td>
+
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Nakul Parameswar</b></td>
+                                <td>Entrepreneurship and Management</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Nishanth Dongari</b></td>
+                                <td>Mechanical & Aerospace Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Pradeep Kumar Yemula</b></td>
+                                <td>Electrical Engineering</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#"><b>Dr. Praveen T</b></a></td>
+                                <td>Computer Science Engineering</td>
+
+                            </tr>
+                            <tr>
+                                <td><b>Dr. R Prasanth Kumar </b></td>
+                                <td>Mechanical & Aerospace Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Rajalakshmi Pachamuthu</b></td>
+                                <td>Electrical Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Sathya Peri</b></td>
+                                <td>Computer Science Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Satish Regonda  </b></td>
+                                <td>Civil Engineering</td>
+
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Shashank Vatedka</b></td>
+                                <td>Electrical Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Shivaji</b></td>
+                                <td>Design</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Sireesh S</b></td>
+                                <td>Civil Engineering</td>
+                            </tr>
+
+
+                            <tr>
+                                <td><b>Dr. Siva Kumar K</b></td>
+                                <td>Electrical  Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Siva Rama Krishna Vanjari</b></td>
+                                <td> Electrical Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Srijith P.K</b></td>
+                                <td>Computer Science Engineering
+</td>
+
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Sumohana Channappayya</b></td>
+                                <td>Electrical Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Sundaram Vanka</b></td>
+                                <td>Electrical Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Suriya Prakash</b></td>
+                                <td>Civil Engineering</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#"><b>Dr. SuryaKumar S</b></a></td>
+                                <td>Mechanical & Aerospace Engineering</td>
+
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Umashankar </b></td>
+                                <td>Civil Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Venkatesham B</b></td>
+                                <td>Mechanical & Aerospace Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. VidyaSagar M</b></td>
+                                <td>Electrical Engineering</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dr. Vineeth N Balasubramanian  </b></td>
+                                <td>Computer Science Engineering</td>
+
+                            </tr>
                             
                             </table>
                             
