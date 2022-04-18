@@ -41,7 +41,7 @@ Indian Institute of Technology Hyderabad,
 Kandi, Sangareddy – 502284</p>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Phone: +91 402 301 6986</a></li>
+                                        <li>Phone: +91 402 301 6986</li>
                                         <!-- <li><a href="#">Cell: +95 (0) 123 456 789</a></li> -->
                                     </ul>
                                 </div>
