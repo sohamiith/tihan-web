@@ -76,44 +76,77 @@ th, td {
             </div>
         </div>
 
-         <!-- Services Details Start -->
-         <div class="services-details-area" >
+        <!-- Services Details Start -->
+        <div class="services-details-area" >
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="single-services section-padding2">
                             <div class="details-caption">
-                                
-                        <blockquote class="generic-blockquote">
-							<h4>Currennt Tenders</h4>
-						</blockquote>
-                        <table>
-                        <thead>
-                            <tr>
-                            <th>Start Date</th>
-                            <th>Description</th>
-                            <th>Documents</th>
-                            <th>End Date</th>
-                            </tr>
-                        </thead>
-                        @foreach($tenders as $tender)
-                        @if($tender->end_date >= date('Y-m-d'))
-                        <tr id="row_tenders_{{ $tender->seq_no}}">
-                            <?php 
-                            $start_date = date("d/m/Y", strtotime($tender->start_date));
-                            $end_date = date("d/m/Y", strtotime($tender->end_date));
-                            ?>
-                            <td>{{$start_date}}</td>
-                            <td>{{$tender->description}}</td>
-                            <td> <a href="{{$tender->document}}"> Tender File </a></td>
-                            <td>{{$end_date}}</td>
-                            </tr>
-                        @endif
-                        @endforeach
-                            </table>
-                            <br><br>
-                            <a href="/archives-tender"> Archives</a></p>
+                                <blockquote class="generic-blockquote">
+        							<h4>Currennt Tenders</h4>
+        						</blockquote>
+                                <table>
+                                <thead>
+                                    <tr>
+                                    <th>Start Date</th>
+                                    <th>Description</th>
+                                    <th>Documents</th>
+                                    <th>End Date</th>
+                                    </tr>
+                                </thead>
+                                @foreach($tenders as $tender)
+                                @if($tender->end_date >= date('Y-m-d'))
+                                <tr id="row_tenders_{{ $tender->seq_no}}">
+                                    <?php 
+                                    $start_date = date("d/m/Y", strtotime($tender->start_date));
+                                    $end_date = date("d/m/Y", strtotime($tender->end_date));
+                                    ?>
+                                    <td>{{$start_date}}</td>
+                                    <td>{{$tender->description}}</td>
+                                    <td> <a href="{{$tender->document}}"> Tender File </a></td>
+                                    <td>{{$end_date}}</td>
+                                    </tr>
+                                @endif
+                                @endforeach
+                                    </table>
+                                    <br><br>
+                                    <a href="/archives-tender"> Archives</a></p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-details-area" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-services section-padding2" style="padding-top: 0px;">
+                            <div class="details-caption">
+                                <blockquote class="generic-blockquote">
+                                    <h4>Purchase Order</h4>
+                                </blockquote>
+                                <table>
+                                <thead>
+                                    <tr>
+                                    <th>Description</th>
+                                    <th>Cancellation Date</th>
+                                    </tr>
+                                </thead>
+                                @foreach($purchases as $purchase)
+                                <tr id="row_tenders_{{ $tender->seq_no}}">
+                                    <?php 
+                                        $purchase_date = date("d/m/Y", strtotime($tender->purchase_date));
+                                    ?>
+                                    <td>{{$purchase->title}}</td>
+                                    <td>{{$purchase_date}}</td>
+                                </tr>
+                                @endforeach
+                                </table>
+                                <br><br>
+                            </div>
                         </div>
                     </div>
                 </div>

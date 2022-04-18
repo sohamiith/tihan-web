@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Tender;
+use App\Models\Purchase;
 class TendersController extends Controller
 {
     public function index(Request $request)
@@ -16,7 +17,8 @@ class TendersController extends Controller
     public function indexTenders(Request $request)
     {
         $tenders = $this->listTender($request);
-        return view('tender',['tenders'=>$tenders]); 
+        $purchase = $this->listPurchase($request);
+        return view('tender',['tenders'=>$tenders,'purchases'=>$purchase]); 
     }
 
     public function ArchiveTenders(Request $request)
@@ -59,8 +61,29 @@ class TendersController extends Controller
     	{
     		$tenders = $query->get();
     	}
-        //var_dump($tenders);exit();
         return $tenders;
+    }
+
+    public function listPurchase(Request $request)
+    {
+        $query = Purchase::query();
+        $query->orderBy('seq_no','ASC');
+        $purchase = [];
+        $total = $query->count();
+        $page = $request->input('page', 1);
+        $last_page = 1;
+        $type = $request->get('type');
+        
+        if($perPage = $request->get('perPage'))
+        {
+            $purchase = $query->offset(($page - 1) * $perPage)->limit($perPage)->get();
+            $last_page = ceil($total / $perPage);
+        }
+        else
+        {
+            $purchase = $query->get();
+        }
+        return $purchase;
     }
 
     function saveTender(Request $request)
