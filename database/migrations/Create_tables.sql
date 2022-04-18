@@ -243,3 +243,10 @@ add column attendance tinyint default 0 after assets;
 
 alter table tihan.users add column hr tinyint default 0 after assets;
 
+create table purchases(
+seq_no int PRIMARY KEY AUTO_INCREMENT,
+title varchar(255),
+purchase_date date,
+updated_at timestamp,
+created_at timestamp
+);

@@ -127,6 +127,9 @@
                 <a class="dropdown-item" href="./admin-latestevent" >
                   Latest Events
                 </a>
+                <a class="dropdown-item" href="./admin-purchase" >
+                  Purchases
+                </a>
               </div>
             </div>
           </div>

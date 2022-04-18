@@ -11,7 +11,7 @@
                 	<div class="card">
 	                    <div class="card-body p-4 text-center">
 	                    <span class="avatar avatar-xl mb-3 avatar-rounded">AD</span>
-	                    <h3 class="m-0 mb-1">{{Session::get('user')->email}}</h3>
+	                    <h3 class="m-0 mb-1">{{Session::get('person')->full_name}}</h3>
 	                    <div class="text-muted">Tihan Staff</div>
 	                    <div class="mt-3">
 	                        <span class="badge bg-green-lt">Admin</span>

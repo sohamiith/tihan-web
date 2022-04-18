@@ -17,6 +17,7 @@ use App\Http\Controllers\JobsController;
 use App\Http\Controllers\PresssController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\LatesteventsController;
+use App\Http\Controllers\PurchasesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -219,3 +220,9 @@ Route::get("/admin-events", [EventsController::class,'index']);
 Route::post("/admin-events", [EventsController::class,'listEvents']);
 Route::post("/admin-events/add", [EventsController::class,'saveEvents']);
 Route::delete('admin-events/{seq_no}', [EventsController::class,'deleteEvent']);
+
+Route::get("/admin-purchase", [PurchasesController::class,'index']);
+Route::get("/admin-purchase/{seq_no}", [PurchasesController::class,'getPurchase']);
+Route::post("/admin-purchase", [PurchasesController::class,'listPurchase']);
+Route::post("/admin-purchase/add", [PurchasesController::class,'savePurchase']);
+Route::delete('admin-purchase/{seq_no}', [PurchasesController::class,'deletePurchase']);

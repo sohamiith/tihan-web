@@ -47,23 +47,10 @@ class StudentController extends Controller
 
 	public function getStudent($seq_no)
 	{
-		//return
-        /*$stu = Student::where('seq_no',$seq_no)->get();
-        $query = User::query();
-        $query->select('user_type','login_per','leave_apply','leave_managment','website_data','accounts','assets','hr','attendance','leave_balance');
-        $query->where('emp_id',$stu[0]->roll_no);
-        $user = $query->get();
-        //var_dump(gettype($stu[0]));
-        //var_dump(gettype($user[0]));exit();
-        $result = (object)array_merge((array)$stu[0],(array)$user[0]);
-        //var_dump($result);exit();
-        return $result;*/
-
         $students = Student::select("students.*","users.emp_id as emp_id","users.user_type as user_type","users.login_per as login_per","users.leave_apply as leave_apply","users.leave_managment as leave_managment","users.website_data as website_data","users.accounts as accounts","users.assets as assets","users.hr as hr","users.attendance as attendance","users.leave_balance as leave_balance")
         ->join('users', "students.roll_no","=","users.emp_id")
         ->where('students.seq_no','=',$seq_no)
         ->get();
-        //var_dump($students);exit();
         return $students;
 	}
 
