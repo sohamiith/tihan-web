@@ -29,6 +29,7 @@ alter table students add pan_url varchar(255) default null after pan;
 alter table students add passbook varchar(255) default null after pan_url;
 alter table students add passbook_url varchar(255) default null after passbook;
 alter table students add batch varchar(15) default null after date_of_joining;
+ALTER TABLE tihan.students CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 create table interns (
 seq_no int PRIMARY KEY AUTO_INCREMENT,
